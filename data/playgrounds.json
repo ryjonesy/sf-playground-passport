@@ -1,0 +1,1730 @@
+[
+  {
+    "name": "10th Ave & Clement Mini Park",
+    "facility": "Children's Play Area",
+    "address": "351 Ninth Ave",
+    "zipcode": "94118",
+    "lat": 37.78191067,
+    "lng": -122.46841197,
+    "acres": 0.05024662603,
+    "accessibility": [],
+    "id": "10th-ave-clement-mini-park"
+  },
+  {
+    "name": "24th & York Mini Park",
+    "facility": "Children's Play Area",
+    "address": "2810 24th St",
+    "zipcode": "94110",
+    "lat": 37.753123790000004,
+    "lng": -122.40860876,
+    "acres": 0.01226209803,
+    "accessibility": [],
+    "id": "24th-york-mini-park"
+  },
+  {
+    "name": "Adam Rodgers Park",
+    "facility": "Children's Play Area",
+    "address": "1215 Quesada Ave",
+    "zipcode": "94124",
+    "lat": 37.73068759,
+    "lng": -122.38371190000001,
+    "acres": 0.07472977617,
+    "accessibility": [],
+    "id": "adam-rodgers-park"
+  },
+  {
+    "name": "Alamo Square",
+    "facility": "Children's Play Area",
+    "address": "1081 Fulton St",
+    "zipcode": "94117",
+    "lat": 37.776465560000005,
+    "lng": -122.43378853,
+    "acres": 0.10545110285,
+    "accessibility": [
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Rocker",
+      "Accessible Swing"
+    ],
+    "id": "alamo-square"
+  },
+  {
+    "name": "Alice Chalmers Playground",
+    "facility": "Children's Play Area",
+    "address": "670 Brunswick St",
+    "zipcode": "94112",
+    "lat": 37.70961315,
+    "lng": -122.44682994,
+    "acres": 0.09102770983,
+    "accessibility": [],
+    "id": "alice-chalmers-playground"
+  },
+  {
+    "name": "Alioto Mini Park",
+    "facility": "Children's Play Area",
+    "address": "3460 20th St",
+    "zipcode": "94110",
+    "lat": 37.75900204,
+    "lng": -122.41829005,
+    "acres": 0.02593261547,
+    "accessibility": [],
+    "id": "alioto-mini-park"
+  },
+  {
+    "name": "Alta Plaza Park",
+    "facility": "Children's Play Area",
+    "address": "2501 Jackson St",
+    "zipcode": "94115",
+    "lat": 37.79097187,
+    "lng": -122.43811126,
+    "acres": 0.21066899128,
+    "accessibility": [
+      "Accessible Parking",
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Spinner",
+      "Accessible Rocker",
+      "Accessible Swing"
+    ],
+    "id": "alta-plaza-park"
+  },
+  {
+    "name": "Angelo J. Rossi Playground",
+    "facility": "Rossi Children's Play Areas",
+    "address": "600 Arguello Blvd",
+    "zipcode": "94118",
+    "lat": 37.7783897,
+    "lng": -122.45823890000001,
+    "acres": 0.15219875138,
+    "accessibility": [
+      "Accessible Parking",
+      "Accessible Picnic Area",
+      "Accessible Spinner",
+      "Accessible Rocker",
+      "Accessible Swing"
+    ],
+    "id": "angelo-j-rossi-playground"
+  },
+  {
+    "name": "Aptos Playground",
+    "facility": "Children's Play Area",
+    "address": "139 Aptos Ave",
+    "zipcode": "94127",
+    "lat": 37.72873508000001,
+    "lng": -122.46608373999999,
+    "acres": 0.0873824736,
+    "accessibility": [
+      "Accessible Parking",
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Rocker",
+      "Accessible Swing"
+    ],
+    "id": "aptos-playground"
+  },
+  {
+    "name": "Argonne Playground",
+    "facility": "Children's Play Area",
+    "address": "455 18th Ave",
+    "zipcode": "94121",
+    "lat": 37.77931605,
+    "lng": -122.47764552,
+    "acres": 0.03862708678,
+    "accessibility": [
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Spinner",
+      "Accessible Swing"
+    ],
+    "id": "argonne-playground"
+  },
+  {
+    "name": "Balboa Park",
+    "facility": "Children's Play Areas",
+    "address": "51 Havelock St",
+    "zipcode": "94112",
+    "lat": 37.72519208,
+    "lng": -122.44382399999999,
+    "acres": 0.28682994513,
+    "accessibility": [
+      "Accessible Parking",
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Spinner",
+      "Accessible Rocker",
+      "Accessible Swing"
+    ],
+    "id": "balboa-park"
+  },
+  {
+    "name": "Bayview K.C. Jones Playground",
+    "facility": "Children's Play Area",
+    "address": "5701 3rd St",
+    "zipcode": "94124",
+    "lat": 37.72585528,
+    "lng": -122.39347714,
+    "acres": 0.07401249449,
+    "accessibility": [],
+    "id": "bayview-k-c-jones-playground"
+  },
+  {
+    "name": "Bernal Heights Rec Center",
+    "facility": "Children's Play Area",
+    "address": "500 Moultrie St",
+    "zipcode": "94110",
+    "lat": 37.73865917,
+    "lng": -122.4161688,
+    "acres": 0.09594564555,
+    "accessibility": [],
+    "id": "bernal-heights-rec-center"
+  },
+  {
+    "name": "Betty Ann Ong Chinese Rec Center",
+    "facility": "Children's Play Areas",
+    "address": "1101 Washington St",
+    "zipcode": "94108",
+    "lat": 37.794242090000004,
+    "lng": -122.41195394,
+    "acres": 0.09865985239,
+    "accessibility": [],
+    "id": "betty-ann-ong-chinese-rec-center"
+  },
+  {
+    "name": "Brooks Park",
+    "facility": "Children's Play Area",
+    "address": "373 Ramsell St",
+    "zipcode": "94132",
+    "lat": 37.71746993,
+    "lng": -122.46629264,
+    "acres": 0.05595733655,
+    "accessibility": [],
+    "id": "brooks-park"
+  },
+  {
+    "name": "Buchanan Street Mall",
+    "facility": "Children's Play Area",
+    "address": "1151 Buchanan St",
+    "zipcode": "94102",
+    "lat": 37.77932518,
+    "lng": -122.42855185,
+    "acres": 0.14396688797,
+    "accessibility": [],
+    "id": "buchanan-street-mall"
+  },
+  {
+    "name": "Buena Vista Park",
+    "facility": "Children's Play Area",
+    "address": "1293 Haight St",
+    "zipcode": "94117",
+    "lat": 37.76990382,
+    "lng": -122.44210566,
+    "acres": 0.09225425184,
+    "accessibility": [],
+    "id": "buena-vista-park"
+  },
+  {
+    "name": "Cabrillo Playground",
+    "facility": "Children's Play Area",
+    "address": "851 38th Ave",
+    "zipcode": "94121",
+    "lat": 37.77289267,
+    "lng": -122.49844385,
+    "acres": 0.1609505916,
+    "accessibility": [
+      "Accessible Parking",
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Spinner",
+      "Accessible Rocker",
+      "Accessible Swing"
+    ],
+    "id": "cabrillo-playground"
+  },
+  {
+    "name": "Carl Larsen Park",
+    "facility": "Children's Play Area",
+    "address": "2695 19th Ave",
+    "zipcode": "94116",
+    "lat": 37.73954395,
+    "lng": -122.47590909,
+    "acres": 0.13364737557,
+    "accessibility": [
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Spinner",
+      "Accessible Swing"
+    ],
+    "id": "carl-larsen-park"
+  },
+  {
+    "name": "Cayuga Playground",
+    "facility": "Cayuga CPA",
+    "address": "301 Naglee Ave",
+    "zipcode": "94112",
+    "lat": 37.714039729999996,
+    "lng": -122.45011063000001,
+    "acres": 0.16051143113,
+    "accessibility": [
+      "Accessible Parking",
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Spinner",
+      "Accessible Swing"
+    ],
+    "id": "cayuga-playground"
+  },
+  {
+    "name": "Coleridge Mini Park",
+    "facility": "Children's Play Areas",
+    "address": "90 Coleridge St",
+    "zipcode": "94110",
+    "lat": 37.744366930000005,
+    "lng": -122.4194843,
+    "acres": 0.01191517493,
+    "accessibility": [],
+    "id": "coleridge-mini-park"
+  },
+  {
+    "name": "Collis P. Huntington Park",
+    "facility": "Children's Play Area",
+    "address": "1000 Taylor St",
+    "zipcode": "94108",
+    "lat": 37.792427,
+    "lng": -122.41221729,
+    "acres": 0.06183194261,
+    "accessibility": [
+      "Accessible Swing"
+    ],
+    "id": "collis-p-huntington-park"
+  },
+  {
+    "name": "Cow Hollow Playground",
+    "facility": "Children's Play Area",
+    "address": "1 Miley St",
+    "zipcode": "94123",
+    "lat": 37.79731243,
+    "lng": -122.44489829,
+    "acres": 0.06229822796,
+    "accessibility": [],
+    "id": "cow-hollow-playground"
+  },
+  {
+    "name": "Crocker Amazon Playground",
+    "facility": "Crocker CPA",
+    "address": "799 Moscow St",
+    "zipcode": "94134",
+    "lat": 37.71459677,
+    "lng": -122.43084902000001,
+    "acres": 0.28085628719,
+    "accessibility": [
+      "Accessible Parking",
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Swing"
+    ],
+    "id": "crocker-amazon-playground"
+  },
+  {
+    "name": "Douglass Playground",
+    "facility": "Children's Play Areas",
+    "address": "1098 Douglass St",
+    "zipcode": "94131",
+    "lat": 37.74804263,
+    "lng": -122.43850637,
+    "acres": 0.13004701171,
+    "accessibility": [],
+    "id": "douglass-playground"
+  },
+  {
+    "name": "Duboce Park",
+    "facility": "Children's Play Area",
+    "address": "50 Scott St",
+    "zipcode": "94117",
+    "lat": 37.769401189999996,
+    "lng": -122.43388432,
+    "acres": 0.15584270432,
+    "accessibility": [
+      "Accessible Parking",
+      "Accessible Restroom",
+      "Accessible Spinner",
+      "Accessible Swing"
+    ],
+    "id": "duboce-park"
+  },
+  {
+    "name": "Eugene Friend Rec Center",
+    "facility": "Children's Play Area",
+    "address": "270 6th St",
+    "zipcode": "94103",
+    "lat": 37.778489119999996,
+    "lng": -122.4063768,
+    "acres": 0.07551038476,
+    "accessibility": [],
+    "id": "eugene-friend-rec-center"
+  },
+  {
+    "name": "Eureka Valley Rec Center",
+    "facility": "CPA",
+    "address": "100 Collingwood St",
+    "zipcode": "94114",
+    "lat": 37.760086449999996,
+    "lng": -122.43623904,
+    "acres": 0.08863412649,
+    "accessibility": [],
+    "id": "eureka-valley-rec-center"
+  },
+  {
+    "name": "Excelsior Playground",
+    "facility": "Excelsior CPA",
+    "address": "579 Madrid St",
+    "zipcode": "94112",
+    "lat": 37.720131300000006,
+    "lng": -122.43358647999999,
+    "acres": 0.14861040748,
+    "accessibility": [],
+    "id": "excelsior-playground"
+  },
+  {
+    "name": "Father Alfred E. Boeddeker Park",
+    "facility": "Children's Play Area",
+    "address": "246 Eddy St",
+    "zipcode": "94102",
+    "lat": 37.784379030000004,
+    "lng": -122.41209591,
+    "acres": 0.06533401699,
+    "accessibility": [],
+    "id": "father-alfred-e-boeddeker-park"
+  },
+  {
+    "name": "Francisco Park",
+    "facility": "Children's Play Area",
+    "address": "2745 Larkin St",
+    "zipcode": "94109",
+    "lat": 37.80378364,
+    "lng": -122.42034518,
+    "acres": 0.15639515542,
+    "accessibility": [],
+    "id": "francisco-park"
+  },
+  {
+    "name": "Franklin Square",
+    "facility": "CPA",
+    "address": "2500 17th St",
+    "zipcode": "94110",
+    "lat": 37.76465546,
+    "lng": -122.40974615,
+    "acres": 0.24476620891,
+    "accessibility": [],
+    "id": "franklin-square"
+  },
+  {
+    "name": "Fulton Playground",
+    "facility": "Children's Play Areas",
+    "address": "855 27th Ave",
+    "zipcode": "94121",
+    "lat": 37.77336554,
+    "lng": -122.48695434000001,
+    "acres": 0.17421992034,
+    "accessibility": [
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Spinner",
+      "Accessible Rocker",
+      "Accessible Swing"
+    ],
+    "id": "fulton-playground"
+  },
+  {
+    "name": "Garfield Square",
+    "facility": "Children's Play Areas",
+    "address": "3100 26th St",
+    "zipcode": "94110",
+    "lat": 37.74964653,
+    "lng": -122.41233213,
+    "acres": 0.10961632736,
+    "accessibility": [
+      "Accessible Parking",
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Spinner",
+      "Accessible Rocker",
+      "Accessible Swing"
+    ],
+    "id": "garfield-square"
+  },
+  {
+    "name": "George Christopher Playground",
+    "facility": "Childrens Play Area",
+    "address": "5210 Diamond Heights Blvd",
+    "zipcode": "94131",
+    "lat": 37.74345065,
+    "lng": -122.4401778,
+    "acres": 0.15646286915,
+    "accessibility": [],
+    "id": "george-christopher-playground"
+  },
+  {
+    "name": "Gilman Playground",
+    "facility": "Children's Play Areas",
+    "address": "993 Gilman Ave",
+    "zipcode": "94124",
+    "lat": 37.716715660000006,
+    "lng": -122.38803502,
+    "acres": 0.18627031038,
+    "accessibility": [
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Spinner",
+      "Accessible Swing"
+    ],
+    "id": "gilman-playground"
+  },
+  {
+    "name": "Glen Canyon Park",
+    "facility": "Glen Park Children's Play Areas",
+    "address": "",
+    "zipcode": "94131",
+    "lat": 37.736668120000004,
+    "lng": -122.44052675,
+    "acres": 0.16565378765,
+    "accessibility": [
+      "Accessible Parking",
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Spinner",
+      "Accessible Rocker",
+      "Accessible Swing"
+    ],
+    "id": "glen-canyon-park"
+  },
+  {
+    "name": "Golden Gate Heights Park",
+    "facility": "Children's Play Area",
+    "address": "2041 12th Ave",
+    "zipcode": "94116",
+    "lat": 37.75016567,
+    "lng": -122.46881499,
+    "acres": 0.06865427043,
+    "accessibility": [],
+    "id": "golden-gate-heights-park"
+  },
+  {
+    "name": "Golden Gate Park - Section 1",
+    "facility": "GGP1 Panhandle Childrens Play Area",
+    "address": "501 Stanyan St",
+    "zipcode": "94117",
+    "lat": 37.77208649,
+    "lng": -122.44794108,
+    "acres": 0.2770122337,
+    "accessibility": [],
+    "id": "golden-gate-park-section-1"
+  },
+  {
+    "name": "Golden Gate Park - Section 2",
+    "facility": "GGP2 9th & Fulton Children's Play Area",
+    "address": "501 Stanyan St",
+    "zipcode": "94118",
+    "lat": 37.773091840000006,
+    "lng": -122.4672512,
+    "acres": 0.1857716685,
+    "accessibility": [],
+    "id": "golden-gate-park-section-2"
+  },
+  {
+    "name": "Golden Gate Park - Section 4",
+    "facility": "GGP4 Mothers Meadow Playground",
+    "address": "501 Stanyan St",
+    "zipcode": "94118",
+    "lat": 37.76698921,
+    "lng": -122.47612304,
+    "acres": 0.12010004477,
+    "accessibility": [],
+    "id": "golden-gate-park-section-4"
+  },
+  {
+    "name": "Golden Gate Park - Section 6",
+    "facility": "GGP6 Boat Children's Play Area",
+    "address": "501 Stanyan St",
+    "zipcode": "94121",
+    "lat": 37.76479834,
+    "lng": -122.50504344,
+    "acres": 0.12369240152,
+    "accessibility": [],
+    "id": "golden-gate-park-section-6"
+  },
+  {
+    "name": "Golden Gate Park - Section 7",
+    "facility": "GGP7 Koret Children's Quarter",
+    "address": "",
+    "zipcode": "94122",
+    "lat": 37.76821741,
+    "lng": -122.45727942,
+    "acres": 0.66941202755,
+    "accessibility": [],
+    "id": "golden-gate-park-section-7"
+  },
+  {
+    "name": "Grattan Playground",
+    "facility": "Children's Play Area",
+    "address": "1180 Stanyan St",
+    "zipcode": "94117",
+    "lat": 37.76273838,
+    "lng": -122.45166714,
+    "acres": 0.13975935216,
+    "accessibility": [],
+    "id": "grattan-playground"
+  },
+  {
+    "name": "Hamilton Rec Center",
+    "facility": "Children's Play Area",
+    "address": "1900 Geary Blvd",
+    "zipcode": "94115",
+    "lat": 37.784340390000004,
+    "lng": -122.43554271,
+    "acres": 0.15761662259,
+    "accessibility": [
+      "Accessible Parking",
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Spinner",
+      "Accessible Rocker",
+      "Accessible Swing"
+    ],
+    "id": "hamilton-rec-center"
+  },
+  {
+    "name": "Hayes Valley Playground",
+    "facility": "Children's Play Area",
+    "address": "689 Hayes St",
+    "zipcode": "94102",
+    "lat": 37.77610517,
+    "lng": -122.42760297,
+    "acres": 0.06286111065,
+    "accessibility": [],
+    "id": "hayes-valley-playground"
+  },
+  {
+    "name": "Head & Brotherood Mini Park",
+    "facility": "Children's Play Area",
+    "address": "300 Head St",
+    "zipcode": "94132",
+    "lat": 37.71272102,
+    "lng": -122.46444548,
+    "acres": 0.03018651171,
+    "accessibility": [],
+    "id": "head-brotherood-mini-park"
+  },
+  {
+    "name": "Helen Wills Playground",
+    "facility": "Children's Play Area",
+    "address": "1401 Broadway",
+    "zipcode": "94109",
+    "lat": 37.79584451,
+    "lng": -122.42072517999999,
+    "acres": 0.12620984481,
+    "accessibility": [
+      "Accessible Parking",
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Spinner",
+      "Accessible Swing"
+    ],
+    "id": "helen-wills-playground"
+  },
+  {
+    "name": "Herz Playground",
+    "facility": "Herz CPA",
+    "address": "1701 Visitacion Ave",
+    "zipcode": "94134",
+    "lat": 37.71365299,
+    "lng": -122.41608599,
+    "acres": 0.12608746556,
+    "accessibility": [],
+    "id": "herz-playground"
+  },
+  {
+    "name": "Hilltop Park",
+    "facility": "Children's Play Area",
+    "address": "2 Willie B Kennedy Dr",
+    "zipcode": "94124",
+    "lat": 37.73302475,
+    "lng": -122.38429984000001,
+    "acres": 0.23067999679,
+    "accessibility": [
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Spinner",
+      "Accessible Rocker",
+      "Accessible Swing"
+    ],
+    "id": "hilltop-park"
+  },
+  {
+    "name": "Holly Park",
+    "facility": "Children's Play Area",
+    "address": "",
+    "zipcode": "94110",
+    "lat": 37.73680576,
+    "lng": -122.41974913,
+    "acres": 0.13616748209,
+    "accessibility": [
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Spinner",
+      "Accessible Rocker",
+      "Accessible Swing"
+    ],
+    "id": "holly-park"
+  },
+  {
+    "name": "In Chan Kaajal Park",
+    "facility": "Children's Play Area",
+    "address": "2080 Folsom St",
+    "zipcode": "94110",
+    "lat": 37.7640346,
+    "lng": -122.41547515,
+    "acres": 0.09670959091,
+    "accessibility": [],
+    "id": "in-chan-kaajal-park"
+  },
+  {
+    "name": "India Basin - Shoreline Park",
+    "facility": "INDIA BASIN WATERFRONT PARK",
+    "address": "915 Hudson Ave",
+    "zipcode": "94124",
+    "lat": 37.73421604,
+    "lng": -122.37555151000001,
+    "acres": 0.12807245868,
+    "accessibility": [],
+    "id": "india-basin-shoreline-park"
+  },
+  {
+    "name": "Ingleside Branch Library",
+    "facility": "Ingleside Library CPA",
+    "address": "1649 Ocean Avenue",
+    "zipcode": "94112",
+    "lat": 37.72423603,
+    "lng": -122.45610190000001,
+    "acres": 0.00749427525,
+    "accessibility": [],
+    "id": "ingleside-branch-library"
+  },
+  {
+    "name": "J.P. Murphy Playground",
+    "facility": "Children's Play Area",
+    "address": "1960 9th Ave",
+    "zipcode": "94116",
+    "lat": 37.75151465,
+    "lng": -122.46497693,
+    "acres": 0.13113858402,
+    "accessibility": [
+      "Accessible Parking",
+      "Accessible Restroom",
+      "Accessible Spinner",
+      "Accessible Rocker",
+      "Accessible Swing"
+    ],
+    "id": "j-p-murphy-playground"
+  },
+  {
+    "name": "Jackson Playground",
+    "facility": "Children's Play Area",
+    "address": "1645 17th St",
+    "zipcode": "94107",
+    "lat": 37.763886150000005,
+    "lng": -122.39933477,
+    "acres": 0.17856459114,
+    "accessibility": [],
+    "id": "jackson-playground"
+  },
+  {
+    "name": "James Rolph Jr. Playground",
+    "facility": "Children's Play Area",
+    "address": "1451 Hampshire St",
+    "zipcode": "94110",
+    "lat": 37.750408459999996,
+    "lng": -122.40637174,
+    "acres": 0.16242159229,
+    "accessibility": [
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Swing"
+    ],
+    "id": "james-rolph-jr-playground"
+  },
+  {
+    "name": "Joe DiMaggio Playground",
+    "facility": "Joe DiMaggio CPA",
+    "address": "651 Lombard Street",
+    "zipcode": "94133",
+    "lat": 37.80243713,
+    "lng": -122.41241973000001,
+    "acres": 0.20617847062,
+    "accessibility": [
+      "Accessible Parking",
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Spinner",
+      "Accessible Rocker",
+      "Accessible Swing"
+    ],
+    "id": "joe-dimaggio-playground"
+  },
+  {
+    "name": "John McLaren Park",
+    "facility": "McLaren Redwood Grove CPA",
+    "address": "",
+    "zipcode": "94134",
+    "lat": 37.72160933,
+    "lng": -122.4205113,
+    "acres": 0.0614408331,
+    "accessibility": [],
+    "id": "john-mclaren-park"
+  },
+  {
+    "name": "Jose Coronado Playground",
+    "facility": "Children's Play Area",
+    "address": "2498 Folsom St",
+    "zipcode": "94110",
+    "lat": 37.75774521,
+    "lng": -122.4148703,
+    "acres": 0.05576645753,
+    "accessibility": [],
+    "id": "jose-coronado-playground"
+  },
+  {
+    "name": "Joseph L. Alioto Performing Arts Piazza",
+    "facility": "Civic Center Plaza Children's Play Areas",
+    "address": "355 McAllister St",
+    "zipcode": "94102",
+    "lat": 37.77954619,
+    "lng": -122.41724816,
+    "acres": 0.28722782851,
+    "accessibility": [],
+    "id": "joseph-l-alioto-performing-arts-piazza"
+  },
+  {
+    "name": "Joseph Lee Rec Center",
+    "facility": "Children's Play Area",
+    "address": "1551 Newcomb Ave",
+    "zipcode": "94124",
+    "lat": 37.73465414,
+    "lng": -122.38988226,
+    "acres": 0.14638430946,
+    "accessibility": [],
+    "id": "joseph-lee-rec-center"
+  },
+  {
+    "name": "Junipero Serra Playground",
+    "facility": "Children's Play Area",
+    "address": "300 Stonecrest Dr",
+    "zipcode": "94132",
+    "lat": 37.72495972,
+    "lng": -122.47403344,
+    "acres": 0.0641735466,
+    "accessibility": [
+      "Accessible Parking",
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Spinner",
+      "Accessible Rocker",
+      "Accessible Swing"
+    ],
+    "id": "junipero-serra-playground"
+  },
+  {
+    "name": "Juri Commons",
+    "facility": "Children's Play Area",
+    "address": "324 San Jose Ave",
+    "zipcode": "94110",
+    "lat": 37.749425190000004,
+    "lng": -122.42210585,
+    "acres": 0.02393116781,
+    "accessibility": [],
+    "id": "juri-commons"
+  },
+  {
+    "name": "Kelloch & Velasco Mini Park",
+    "facility": "Childrens Play Area",
+    "address": "199 Kelloch Ave",
+    "zipcode": "94134",
+    "lat": 37.70866005,
+    "lng": -122.41358626,
+    "acres": 0.14859299725,
+    "accessibility": [],
+    "id": "kelloch-velasco-mini-park"
+  },
+  {
+    "name": "Kid Power Park",
+    "facility": "Children's Play Area",
+    "address": "45 Hoff Street",
+    "zipcode": "94110",
+    "lat": 37.76414621,
+    "lng": -122.42030869,
+    "acres": 0.12010439624,
+    "accessibility": [],
+    "id": "kid-power-park"
+  },
+  {
+    "name": "Koshland Park",
+    "facility": "Children's Play Area",
+    "address": "363 Page St",
+    "zipcode": "94102",
+    "lat": 37.773271320000006,
+    "lng": -122.42677832999999,
+    "acres": 0.05571789509,
+    "accessibility": [],
+    "id": "koshland-park"
+  },
+  {
+    "name": "Lafayette Park",
+    "facility": "Children's Play Area",
+    "address": "2101 Washington St",
+    "zipcode": "94109",
+    "lat": 37.79153308,
+    "lng": -122.4284802,
+    "acres": 0.28466603466,
+    "accessibility": [
+      "Accessible Parking",
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Spinner",
+      "Accessible Swing"
+    ],
+    "id": "lafayette-park"
+  },
+  {
+    "name": "Laurel Hill Playground",
+    "facility": "Children's Play Area",
+    "address": "251 Euclid Ave",
+    "zipcode": "94118",
+    "lat": 37.783785820000006,
+    "lng": -122.45111797999999,
+    "acres": 0.060246236,
+    "accessibility": [],
+    "id": "laurel-hill-playground"
+  },
+  {
+    "name": "Lessing & Sears Mini Park",
+    "facility": "Children's Play Area",
+    "address": "10 Lessing St",
+    "zipcode": "94112",
+    "lat": 37.70857479,
+    "lng": -122.4553121,
+    "acres": 0.0326711141,
+    "accessibility": [],
+    "id": "lessing-sears-mini-park"
+  },
+  {
+    "name": "Lincoln Park",
+    "facility": "Children's Play Area",
+    "address": "100 34th Ave",
+    "zipcode": "94121",
+    "lat": 37.78213468,
+    "lng": -122.49356962,
+    "acres": 0.50106159435,
+    "accessibility": [],
+    "id": "lincoln-park"
+  },
+  {
+    "name": "Little Hollywood Park",
+    "facility": "Little Hollywood Children's Play Areas",
+    "address": "",
+    "zipcode": "94134",
+    "lat": 37.7101586,
+    "lng": -122.39814039,
+    "acres": 0.07786277273,
+    "accessibility": [],
+    "id": "little-hollywood-park"
+  },
+  {
+    "name": "Louis Sutter Playground",
+    "facility": "Sutter Children's Play Area",
+    "address": "599 Yale St",
+    "zipcode": "94134",
+    "lat": 37.72212981,
+    "lng": -122.41331348000001,
+    "acres": 0.19776177135,
+    "accessibility": [],
+    "id": "louis-sutter-playground"
+  },
+  {
+    "name": "Margaret S.Hayward Playground",
+    "facility": "Children's Play Area",
+    "address": "1016 Laguna St",
+    "zipcode": "94102",
+    "lat": 37.780989770000005,
+    "lng": -122.42565219000001,
+    "acres": 0.15761800987,
+    "accessibility": [],
+    "id": "margaret-s-hayward-playground"
+  },
+  {
+    "name": "Mariposa Park",
+    "facility": "Children's Play Area",
+    "address": "",
+    "zipcode": "94158",
+    "lat": 37.76461797,
+    "lng": -122.39120738999999,
+    "acres": 0.04837691276,
+    "accessibility": [],
+    "id": "mariposa-park"
+  },
+  {
+    "name": "McCoppin Square",
+    "facility": "Children's Play Area",
+    "address": "2354 24th Ave",
+    "zipcode": "94116",
+    "lat": 37.74318068,
+    "lng": -122.48004217,
+    "acres": 0.11045945064,
+    "accessibility": [
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Spinner",
+      "Accessible Rocker",
+      "Accessible Swing"
+    ],
+    "id": "mccoppin-square"
+  },
+  {
+    "name": "McKinley Square",
+    "facility": "Children's Play Area",
+    "address": "2311 20th St",
+    "zipcode": "94107",
+    "lat": 37.759351810000005,
+    "lng": -122.40451336,
+    "acres": 0.12410454522,
+    "accessibility": [],
+    "id": "mckinley-square"
+  },
+  {
+    "name": "Merced Heights Playground",
+    "facility": "Children's Play Area",
+    "address": "801 Shields St",
+    "zipcode": "94132",
+    "lat": 37.71757353,
+    "lng": -122.47005553,
+    "acres": 0.0759946832,
+    "accessibility": [],
+    "id": "merced-heights-playground"
+  },
+  {
+    "name": "Michelangelo Playground",
+    "facility": "Children's Play Area",
+    "address": "1055 Greenwich St",
+    "zipcode": "94133",
+    "lat": 37.80123434,
+    "lng": -122.41695398,
+    "acres": 0.03637420478,
+    "accessibility": [],
+    "id": "michelangelo-playground"
+  },
+  {
+    "name": "Midtown Terrace Playground",
+    "facility": "Children's Play Area",
+    "address": "210 Olympia Way",
+    "zipcode": "94131",
+    "lat": 37.75181744,
+    "lng": -122.45573732,
+    "acres": 0.06579628306,
+    "accessibility": [
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Spinner",
+      "Accessible Swing"
+    ],
+    "id": "midtown-terrace-playground"
+  },
+  {
+    "name": "Minnie and Lovie Rec Center",
+    "facility": "Children's Play Area",
+    "address": "650 Capitol Ave",
+    "zipcode": "94112",
+    "lat": 37.7164089,
+    "lng": -122.45850168,
+    "acres": 0.14759212029,
+    "accessibility": [
+      "Accessible Parking",
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Rocker",
+      "Accessible Swing"
+    ],
+    "id": "minnie-and-lovie-rec-center"
+  },
+  {
+    "name": "Miraloma Playground",
+    "facility": "Children's Play Area",
+    "address": "25 Omar Way",
+    "zipcode": "94127",
+    "lat": 37.73898447,
+    "lng": -122.44943753,
+    "acres": 0.16563057645,
+    "accessibility": [],
+    "id": "miraloma-playground"
+  },
+  {
+    "name": "Mission Bay Park",
+    "facility": "Mission Bay CPA",
+    "address": "",
+    "zipcode": "94158",
+    "lat": 37.77218105,
+    "lng": -122.39250736,
+    "acres": 0.25050300758,
+    "accessibility": [],
+    "id": "mission-bay-park"
+  },
+  {
+    "name": "Mission Dolores Park",
+    "facility": "Children's Play Area",
+    "address": "646 Dolores St",
+    "zipcode": "94114",
+    "lat": 37.758779499999996,
+    "lng": -122.4268809,
+    "acres": 0.45573052709,
+    "accessibility": [],
+    "note": "Family favorite per Kira Sparks blog",
+    "id": "mission-dolores-park"
+  },
+  {
+    "name": "Mission Playground",
+    "facility": "Children's Play Area",
+    "address": "3555 19th St",
+    "zipcode": "94110",
+    "lat": 37.75939145,
+    "lng": -122.42209518,
+    "acres": 0.22327451882,
+    "accessibility": [],
+    "id": "mission-playground"
+  },
+  {
+    "name": "Mission Rec Center",
+    "facility": "Children's Play Area",
+    "address": "2450 Harrison St",
+    "zipcode": "94110",
+    "lat": 37.7581831,
+    "lng": -122.4131572,
+    "acres": 0.09676358333,
+    "accessibility": [],
+    "id": "mission-rec-center"
+  },
+  {
+    "name": "Moscone Rec Center",
+    "facility": "Children's Play Area",
+    "address": "1800 Chestnut St",
+    "zipcode": "94123",
+    "lat": 37.801502809999995,
+    "lng": -122.43292562,
+    "acres": 0.42745605441,
+    "accessibility": [
+      "Accessible Parking",
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Spinner",
+      "Accessible Rocker",
+      "Accessible Swing"
+    ],
+    "id": "moscone-rec-center"
+  },
+  {
+    "name": "Mountain Lake Park",
+    "facility": "Children's Play Area",
+    "address": "1 11th Ave",
+    "zipcode": "94118",
+    "lat": 37.786992350000006,
+    "lng": -122.47143295000001,
+    "acres": 0.49787937741,
+    "accessibility": [
+      "Accessible Parking",
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Rocker",
+      "Accessible Swing"
+    ],
+    "note": "Family favorite per Kira Sparks blog",
+    "id": "mountain-lake-park"
+  },
+  {
+    "name": "Noe Valley Courts",
+    "facility": "Children's Play Area",
+    "address": "780 Douglass St",
+    "zipcode": "94114",
+    "lat": 37.75129603,
+    "lng": -122.43869421,
+    "acres": 0.019168455,
+    "accessibility": [],
+    "id": "noe-valley-courts"
+  },
+  {
+    "name": "Noe Valley Town Square",
+    "facility": "Children's Play Area",
+    "address": "3861 24th St",
+    "zipcode": "94114",
+    "lat": 37.75127531,
+    "lng": -122.42906988,
+    "acres": 0.0132092259,
+    "accessibility": [],
+    "id": "noe-valley-town-square"
+  },
+  {
+    "name": "Palega Playground",
+    "facility": "Children's Play Area",
+    "address": "500 Felton St",
+    "zipcode": "94134",
+    "lat": 37.72905696,
+    "lng": -122.4100685,
+    "acres": 0.12311581359,
+    "accessibility": [
+      "Accessible Parking",
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Spinner",
+      "Accessible Rocker",
+      "Accessible Swing"
+    ],
+    "id": "palega-playground"
+  },
+  {
+    "name": "Palou & Phelps Park",
+    "facility": "Children's Play Area",
+    "address": "1801 Palou Ave",
+    "zipcode": "94124",
+    "lat": 37.73613332,
+    "lng": -122.39522762,
+    "acres": 0.07557428811,
+    "accessibility": [],
+    "id": "palou-phelps-park"
+  },
+  {
+    "name": "Parkside Square",
+    "facility": "Children's Play Area",
+    "address": "2680 28th Ave",
+    "zipcode": "94132",
+    "lat": 37.7378487,
+    "lng": -122.48455788999999,
+    "acres": 0.28711207576,
+    "accessibility": [
+      "Accessible Parking",
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Rocker",
+      "Accessible Swing"
+    ],
+    "id": "parkside-square"
+  },
+  {
+    "name": "Parque Ninos Unidos",
+    "facility": "Children's Play Area",
+    "address": "3070 23rd St",
+    "zipcode": "94110",
+    "lat": 37.75433137,
+    "lng": -122.41367193,
+    "acres": 0.11466406198,
+    "accessibility": [
+      "Accessible Parking",
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Spinner",
+      "Accessible Rocker",
+      "Accessible Swing"
+    ],
+    "id": "parque-ninos-unidos"
+  },
+  {
+    "name": "Patricia's Green in Hayes Valley",
+    "facility": "Children's Play Area",
+    "address": "489 Hayes St",
+    "zipcode": "94102",
+    "lat": 37.7759568,
+    "lng": -122.42436681000001,
+    "acres": 0.02073024242,
+    "accessibility": [],
+    "id": "patricia-s-green-in-hayes-valley"
+  },
+  {
+    "name": "Peixotto Playground",
+    "facility": "Children's Play Area",
+    "address": "2475 15th St",
+    "zipcode": "94114",
+    "lat": 37.76552908,
+    "lng": -122.43748989,
+    "acres": 0.12858983379,
+    "accessibility": [],
+    "id": "peixotto-playground"
+  },
+  {
+    "name": "Portsmouth Square",
+    "facility": "Children's Play Area",
+    "address": "745 Kearny St",
+    "zipcode": "94108",
+    "lat": 37.794613680000005,
+    "lng": -122.40525498,
+    "acres": 0.13376658632,
+    "accessibility": [],
+    "id": "portsmouth-square"
+  },
+  {
+    "name": "Potrero Hill Rec Center",
+    "facility": "Children's Play Area",
+    "address": "801 Arkansas St",
+    "zipcode": "94107",
+    "lat": 37.756586520000006,
+    "lng": -122.39716028,
+    "acres": 0.23903643388,
+    "accessibility": [
+      "Accessible Parking",
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Swing"
+    ],
+    "id": "potrero-hill-rec-center"
+  },
+  {
+    "name": "Potrero del Sol",
+    "facility": "Children's Play Area",
+    "address": "",
+    "zipcode": "94110",
+    "lat": 37.75081118,
+    "lng": -122.40469955,
+    "acres": 0.11382053834,
+    "accessibility": [],
+    "id": "potrero-del-sol"
+  },
+  {
+    "name": "Precita Park",
+    "facility": "Children's Play Area",
+    "address": "3200 Folsom St",
+    "zipcode": "94110",
+    "lat": 37.747126120000004,
+    "lng": -122.41099563,
+    "acres": 0.11893091162,
+    "accessibility": [],
+    "id": "precita-park"
+  },
+  {
+    "name": "Presidio Heights Playground",
+    "facility": "Children's Play Area",
+    "address": "3437 Clay St",
+    "zipcode": "94118",
+    "lat": 37.78837473,
+    "lng": -122.4495857,
+    "acres": 0.16082168159,
+    "accessibility": [],
+    "id": "presidio-heights-playground"
+  },
+  {
+    "name": "Presidio Wall Playground",
+    "facility": "Children's Play Area",
+    "address": "3550 Pacific Ave",
+    "zipcode": "94118",
+    "lat": 37.79113987,
+    "lng": -122.45387986,
+    "acres": 0.19092018457,
+    "accessibility": [
+      "Accessible Parking",
+      "Accessible Restroom",
+      "Accessible Spinner",
+      "Accessible Rocker",
+      "Accessible Swing"
+    ],
+    "id": "presidio-wall-playground"
+  },
+  {
+    "name": "Raymond Kimball Playground",
+    "facility": "Kimball CPA",
+    "address": "1901 Geary Blvd",
+    "zipcode": "94115",
+    "lat": 37.78353665,
+    "lng": -122.43493769999999,
+    "acres": 0.16175888315,
+    "accessibility": [
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Swing"
+    ],
+    "id": "raymond-kimball-playground"
+  },
+  {
+    "name": "Richmond Playground",
+    "facility": "Children's Play Area",
+    "address": "149 18th Ave",
+    "zipcode": "94121",
+    "lat": 37.785254900000005,
+    "lng": -122.47816827999999,
+    "acres": 0.08331892746,
+    "accessibility": [],
+    "id": "richmond-playground"
+  },
+  {
+    "name": "Rochambeau Playground",
+    "facility": "Children's Play Area",
+    "address": "250 25th Ave",
+    "zipcode": "94121",
+    "lat": 37.78487517,
+    "lng": -122.48425266,
+    "acres": 0.16217117769,
+    "accessibility": [],
+    "id": "rochambeau-playground"
+  },
+  {
+    "name": "Rolph Nicol Playground",
+    "facility": "Children's Play Area",
+    "address": "",
+    "zipcode": "94132",
+    "lat": 37.73083359,
+    "lng": -122.47991694,
+    "acres": 0.03253000666,
+    "accessibility": [],
+    "id": "rolph-nicol-playground"
+  },
+  {
+    "name": "Selby & Palou Mini Park",
+    "facility": "Children's Play Area",
+    "address": "1321 Selby St",
+    "zipcode": "94124",
+    "lat": 37.73880371,
+    "lng": -122.40040974,
+    "acres": 0.01628638499,
+    "accessibility": [],
+    "id": "selby-palou-mini-park"
+  },
+  {
+    "name": "Seward Mini Park",
+    "facility": "Children's Play Area",
+    "address": "70 Corwin St",
+    "zipcode": "94114",
+    "lat": 37.75789066,
+    "lng": -122.43980313,
+    "acres": 0.02715205601,
+    "accessibility": [],
+    "id": "seward-mini-park"
+  },
+  {
+    "name": "Sgt. John Macaulay Park",
+    "facility": "Children's Play Area",
+    "address": "800 O'Farrell St",
+    "zipcode": "94109",
+    "lat": 37.78538242,
+    "lng": -122.41822671,
+    "acres": 0.09979417103,
+    "accessibility": [],
+    "id": "sgt-john-macaulay-park"
+  },
+  {
+    "name": "Shipyard Parks",
+    "facility": "Innes Court CPA",
+    "address": "100 Innes Court",
+    "zipcode": "94124",
+    "lat": 37.727627420000005,
+    "lng": -122.36802894,
+    "acres": 0.06662538062,
+    "accessibility": [],
+    "id": "shipyard-parks"
+  },
+  {
+    "name": "Shoreview Park",
+    "facility": "Shoreview Children's Play Area",
+    "address": "1 Lillian St",
+    "zipcode": "94124",
+    "lat": 37.73193862,
+    "lng": -122.38113863000001,
+    "acres": 0.09565778237,
+    "accessibility": [],
+    "id": "shoreview-park"
+  },
+  {
+    "name": "Sigmund Stern Recreation Grove",
+    "facility": "Children's Play Area",
+    "address": "2899 19th Ave",
+    "zipcode": "94132",
+    "lat": 37.734957200000004,
+    "lng": -122.47710719999999,
+    "acres": 0.1476742523,
+    "accessibility": [],
+    "id": "sigmund-stern-recreation-grove"
+  },
+  {
+    "name": "Silver Terrace Playground",
+    "facility": "Children's Play Area",
+    "address": "1700 Silver Ave",
+    "zipcode": "94124",
+    "lat": 37.73247402,
+    "lng": -122.40219601,
+    "acres": 0.13365096648,
+    "accessibility": [],
+    "id": "silver-terrace-playground"
+  },
+  {
+    "name": "South Park",
+    "facility": "Children's Play Area",
+    "address": "100 South Park St",
+    "zipcode": "94107",
+    "lat": 37.7813527,
+    "lng": -122.39427376,
+    "acres": 0.07638737374,
+    "accessibility": [],
+    "id": "south-park"
+  },
+  {
+    "name": "South Sunset Playground",
+    "facility": "Children's Play Area",
+    "address": "2601 40th Ave",
+    "zipcode": "94116",
+    "lat": 37.73807818,
+    "lng": -122.49865242999999,
+    "acres": 0.17497701079,
+    "accessibility": [
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Rocker",
+      "Accessible Swing"
+    ],
+    "id": "south-sunset-playground"
+  },
+  {
+    "name": "St. Mary's Rec Center",
+    "facility": "St Mary's CPA",
+    "address": "",
+    "zipcode": "94110",
+    "lat": 37.73340978,
+    "lng": -122.42139317,
+    "acres": 0.36440847406,
+    "accessibility": [
+      "Accessible Parking",
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Spinner",
+      "Accessible Rocker",
+      "Accessible Swing"
+    ],
+    "id": "st-mary-s-rec-center"
+  },
+  {
+    "name": "St. Mary's Square",
+    "facility": "Children's Play Area",
+    "address": "633 California St",
+    "zipcode": "94108",
+    "lat": 37.79213461,
+    "lng": -122.40511899,
+    "acres": 0.11650594972,
+    "accessibility": [
+      "Accessible Parking",
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Spinner",
+      "Accessible Rocker",
+      "Accessible Swing"
+    ],
+    "id": "st-mary-s-square"
+  },
+  {
+    "name": "States Street Playground",
+    "facility": "Children's Play Area",
+    "address": "122 States St",
+    "zipcode": "94114",
+    "lat": 37.76362580999999,
+    "lng": -122.43865693999999,
+    "acres": 0.1327244814,
+    "accessibility": [],
+    "id": "states-street-playground"
+  },
+  {
+    "name": "Sue Bierman Park",
+    "facility": "Sue Bierman Children's Play Area",
+    "address": "143 The Embarcadero",
+    "zipcode": "94111",
+    "lat": 37.79633179,
+    "lng": -122.39597628,
+    "acres": 0.11800075781,
+    "accessibility": [],
+    "id": "sue-bierman-park"
+  },
+  {
+    "name": "Sunnyside Playground",
+    "facility": "Children's Play Area",
+    "address": "233 Melrose Avenue",
+    "zipcode": "94127",
+    "lat": 37.73366601,
+    "lng": -122.44788796,
+    "acres": 0.15319204063,
+    "accessibility": [],
+    "id": "sunnyside-playground"
+  },
+  {
+    "name": "Sunset Rec Center",
+    "facility": "Children's Play Area",
+    "address": "2201 Lawton St",
+    "zipcode": "94122",
+    "lat": 37.7572761,
+    "lng": -122.48711625,
+    "acres": 0.13747249151,
+    "accessibility": [
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Spinner",
+      "Accessible Rocker",
+      "Accessible Swing"
+    ],
+    "id": "sunset-rec-center"
+  },
+  {
+    "name": "Tenderloin Recreation Center",
+    "facility": "Children's Play Area",
+    "address": "570 Ellis St",
+    "zipcode": "94109",
+    "lat": 37.784699059999994,
+    "lng": -122.41524149,
+    "acres": 0.07457586226,
+    "accessibility": [],
+    "id": "tenderloin-recreation-center"
+  },
+  {
+    "name": "Turk & Hyde Mini Park",
+    "facility": "Children's Play Area",
+    "address": "201 Hyde St",
+    "zipcode": "94102",
+    "lat": 37.78274464,
+    "lng": -122.41596779,
+    "acres": 0.03176871235,
+    "accessibility": [],
+    "id": "turk-hyde-mini-park"
+  },
+  {
+    "name": "Upper Noe Rec Center",
+    "facility": "Children's Play Area",
+    "address": "295 Day St",
+    "zipcode": "94131",
+    "lat": 37.7425688,
+    "lng": -122.42820476,
+    "acres": 0.15277890611,
+    "accessibility": [
+      "Accessible Parking",
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Spinner",
+      "Accessible Swing"
+    ],
+    "id": "upper-noe-rec-center"
+  },
+  {
+    "name": "Victoria Manalo Draves Park",
+    "facility": "Children's Play Area",
+    "address": "55 Sherman St",
+    "zipcode": "94103",
+    "lat": 37.777119479999996,
+    "lng": -122.40628935,
+    "acres": 0.22995372039,
+    "accessibility": [],
+    "id": "victoria-manalo-draves-park"
+  },
+  {
+    "name": "Walter Haas Playground",
+    "facility": "Walter Haas CPA",
+    "address": "300 Addison St",
+    "zipcode": "94131",
+    "lat": 37.740743859999995,
+    "lng": -122.43483941999999,
+    "acres": 0.1802179977,
+    "accessibility": [],
+    "id": "walter-haas-playground"
+  },
+  {
+    "name": "Washington & Hyde Mini Park",
+    "facility": "Children's Play Area",
+    "address": "1470 Washington St",
+    "zipcode": "94109",
+    "lat": 37.79401824999999,
+    "lng": -122.41742133,
+    "acres": 0.11846966024,
+    "accessibility": [],
+    "id": "washington-hyde-mini-park"
+  },
+  {
+    "name": "Washington Square",
+    "facility": "Children's Play Area",
+    "address": "600 Columbus Ave",
+    "zipcode": "94133",
+    "lat": 37.80097778,
+    "lng": -122.41071152,
+    "acres": 0.05371473163,
+    "accessibility": [
+      "Accessible Restroom",
+      "Accessible Swing"
+    ],
+    "id": "washington-square"
+  },
+  {
+    "name": "West Portal Playground",
+    "facility": "Children's Play Area",
+    "address": "131 Lenox Way",
+    "zipcode": "94127",
+    "lat": 37.741674339999996,
+    "lng": -122.46507593,
+    "acres": 0.09079535147,
+    "accessibility": [],
+    "id": "west-portal-playground"
+  },
+  {
+    "name": "West Sunset Playground",
+    "facility": "Children's Play Area",
+    "address": "3223 Ortega St",
+    "zipcode": "94116",
+    "lat": 37.75058294,
+    "lng": -122.49801666,
+    "acres": 0.27676931979,
+    "accessibility": [
+      "Accessible Parking",
+      "Accessible Restroom",
+      "Accessible Picnic Area",
+      "Accessible Spinner",
+      "Accessible Rocker",
+      "Accessible Swing"
+    ],
+    "id": "west-sunset-playground"
+  },
+  {
+    "name": "Willie Woo Woo Wong Playground",
+    "facility": "Children's Play Area",
+    "address": "850 Sacramento St",
+    "zipcode": "94108",
+    "lat": 37.79348743,
+    "lng": -122.40712905,
+    "acres": 0.13438473737,
+    "accessibility": [],
+    "id": "willie-woo-woo-wong-playground"
+  },
+  {
+    "name": "Woh Hei Yuen Playground",
+    "facility": "Children's Play Area",
+    "address": "922 Jackson St",
+    "zipcode": "94133",
+    "lat": 37.79588399,
+    "lng": -122.41054869999999,
+    "acres": 0.06164342654,
+    "accessibility": [],
+    "id": "woh-hei-yuen-playground"
+  },
+  {
+    "name": "Yik Oi Huang Peace & Friendship Park",
+    "facility": "Children's Play Area",
+    "address": "251 Leland Ave",
+    "zipcode": "94134",
+    "lat": 37.71280277,
+    "lng": -122.40901841,
+    "acres": 0.1941067314,
+    "accessibility": [],
+    "id": "yik-oi-huang-peace-friendship-park"
+  },
+  {
+    "name": "Youngblood-Coleman Playground",
+    "facility": "Youngblood Coleman Children's Play Areas",
+    "address": "1398 Hudson Ave",
+    "zipcode": "94124",
+    "lat": 37.73818837,
+    "lng": -122.38416795,
+    "acres": 0.17870915174,
+    "accessibility": [],
+    "id": "youngblood-coleman-playground"
+  }
+]

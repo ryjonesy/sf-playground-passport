@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+<title>SF Playground Passport</title>
+<meta name="description" content="An interactive map of every San Francisco Recreation & Park playground. Track which ones your family has visited, find nearby kid-friendly spots, plan trips, and earn badges." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='52' font-size='52'%3E%F0%9F%8E%A0%3C/text%3E%3C/svg%3E" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+<link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+<aside id="sidebar" aria-label="Playground list and controls">
+  <header class="sb-header">
+    <h1>🎠 SF Playground Passport</h1>
+    <p class="tag">Visit every playground in the city.</p>
+  </header>
+
+  <section class="passport">
+    <div class="ring-wrap">
+      <svg viewBox="0 0 80 80" class="ring" aria-hidden="true">
+        <circle cx="40" cy="40" r="34" class="ring-bg" />
+        <circle cx="40" cy="40" r="34" class="ring-fg" id="progRing" />
+      </svg>
+      <div class="ring-num">
+        <span id="progCount">0</span>
+        <span class="ring-of">of <span id="progTotal">0</span></span>
+      </div>
+    </div>
+    <div class="passport-side">
+      <div class="badge-row" id="badgeRow"></div>
+      <div class="actions-row">
+        <button class="mini" id="surpriseBtn" title="Pick a random unvisited playground">🎲 Surprise me</button>
+        <button class="mini" id="nearestBtn" title="Find the closest playground to me">📍 Nearest</button>
+      </div>
+      <div class="actions-row">
+        <button class="mini" id="exportBtn" title="Download your progress as a JSON backup">⬇︎ Export</button>
+        <button class="mini" id="importBtn" title="Restore progress from a backup file">⬆︎ Import</button>
+        <input type="file" id="importFile" accept="application/json" hidden />
+      </div>
+    </div>
+  </section>
+
+  <section class="filters">
+    <input type="search" id="searchInput" placeholder="Search playgrounds…" autocomplete="off" />
+    <div class="filter-row">
+      <label class="chk"><input type="checkbox" id="fltVisited" /> Visited</label>
+      <label class="chk"><input type="checkbox" id="fltUnvisited" /> Not visited</label>
+      <label class="chk"><input type="checkbox" id="fltAccessible" /> ADA features</label>
+      <label class="chk"><input type="checkbox" id="fltRestroom" /> Restroom</label>
+    </div>
+    <div class="filter-row">
+      <label class="chk near"><input type="checkbox" id="fltTrip" /> Trip plan</label>
+      <span class="trip-info" id="tripInfo"></span>
+    </div>
+  </section>
+
+  <section class="layers">
+    <div class="layers-title">Nearby family spots <span class="hint">(click a playground first)</span></div>
+    <label class="chk"><input type="checkbox" class="layerToggle" data-layer="restaurant" /> 🍽 Restaurants</label>
+    <label class="chk"><input type="checkbox" class="layerToggle" data-layer="ice_cream" /> 🍦 Ice cream</label>
+    <label class="chk"><input type="checkbox" class="layerToggle" data-layer="park" /> 🌳 Other parks</label>
+    <label class="chk"><input type="checkbox" class="layerToggle" data-layer="museum" /> 🏛 Museums</label>
+    <label class="chk"><input type="checkbox" class="layerToggle" data-layer="library" /> 📚 Libraries</label>
+    <label class="chk"><input type="checkbox" class="layerToggle" data-layer="cafe" /> ☕ Cafés</label>
+    <div class="radius">
+      Within
+      <select id="radiusSel">
+        <option value="400">400 m (5 min walk)</option>
+        <option value="800" selected>800 m (10 min walk)</option>
+        <option value="1500">1.5 km</option>
+      </select>
+    </div>
+  </section>
+
+  <section class="list-wrap">
+    <div class="list-title"><span id="listCount">0</span> playgrounds</div>
+    <ul id="playgroundList" class="pg-list"></ul>
+  </section>
+
+  <footer class="sb-footer">
+    Data: <a href="https://data.sfgov.org/Culture-and-Recreation/Recreation-and-Parks-Facilities/ib5c-xgwu" target="_blank" rel="noopener">DataSF Rec &amp; Park Facilities</a>,
+    <a href="https://sfrecpark.org/1636/Accessible-Childrens-Play-Areas" target="_blank" rel="noopener">SF Rec &amp; Park Accessibility</a>,
+    <a href="https://www.kirasparks.com/post/a-complete-list-of-san-francisco-playgrounds" target="_blank" rel="noopener">Kira Sparks playground list</a>.
+    Nearby spots from <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>.
+  </footer>
+</aside>
+
+<main id="mapWrap">
+  <div id="map"></div>
+  <button id="toggleSidebar" aria-label="Toggle sidebar">☰</button>
+</main>
+
+<dialog id="detail">
+  <form method="dialog" class="detail-content">
+    <button class="close" value="cancel" aria-label="Close">×</button>
+    <h2 id="dName"></h2>
+    <p class="dAddr" id="dAddr"></p>
+    <div class="dActions">
+      <label class="big-check">
+        <input type="checkbox" id="dVisited" />
+        <span>Visited</span>
+      </label>
+      <button type="button" class="mini" id="dDirections">🗺 Directions</button>
+      <button type="button" class="mini" id="dTrip">➕ Add to trip</button>
+    </div>
+    <div class="dMeta">
+      <div id="dAccess" class="acc"></div>
+      <div id="dNote" class="note"></div>
+    </div>
+    <label class="block">
+      Rating
+      <div class="stars" id="dStars" role="radiogroup" aria-label="Rating">
+        <button type="button" data-r="1">★</button>
+        <button type="button" data-r="2">★</button>
+        <button type="button" data-r="3">★</button>
+        <button type="button" data-r="4">★</button>
+        <button type="button" data-r="5">★</button>
+      </div>
+    </label>
+    <label class="block">
+      Visit notes
+      <textarea id="dNotes" rows="3" placeholder="What did the kids love? Best time to visit? Bring snacks?"></textarea>
+    </label>
+    <label class="block">
+      Last visited
+      <input type="date" id="dDate" />
+    </label>
+  </form>
+</dialog>
+
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script src="./app.js" type="module"></script>
+</body>
+</html>
