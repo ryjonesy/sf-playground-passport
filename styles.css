@@ -201,13 +201,26 @@ dialog#detail::backdrop { background: rgba(15, 18, 25, 0.45); }
   vertical-align: middle; margin-right: 2px;
 }
 
-/* Cluster overrides */
+/* Cluster overrides — orange by default, green when every child is visited,
+   two-tone (orange/green) when only some children are visited */
 .marker-cluster-small { background: rgba(227,88,44,0.25); }
 .marker-cluster-small div { background: rgba(227,88,44,0.85); color: white; font-weight: 600; }
 .marker-cluster-medium { background: rgba(227,88,44,0.30); }
 .marker-cluster-medium div { background: rgba(227,88,44,0.90); color: white; font-weight: 600; }
 .marker-cluster-large { background: rgba(195,71,23,0.35); }
 .marker-cluster-large div { background: rgba(195,71,23,0.95); color: white; font-weight: 600; }
+
+/* All children visited → green cluster */
+.marker-cluster.cluster-all-visited { background: rgba(47,158,68,0.25) !important; }
+.marker-cluster.cluster-all-visited div { background: rgba(47,158,68,0.95) !important; color: white; font-weight: 700; }
+
+/* Mixed: keep orange but add a green ring to hint progress */
+.marker-cluster.cluster-partial { background: rgba(227,88,44,0.20) !important; }
+.marker-cluster.cluster-partial div {
+  background: rgba(227,88,44,0.92) !important;
+  color: white; font-weight: 700;
+  box-shadow: 0 0 0 2px #2f9e44;
+}
 
 /* Mobile */
 @media (max-width: 760px) {

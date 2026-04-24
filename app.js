@@ -81,6 +81,7 @@ function initMap() {
     maxClusterRadius: 35,
     spiderfyOnMaxZoom: true,
     showCoverageOnHover: false,
+    iconCreateFunction: makeClusterIcon,
   });
   map.addLayer(cluster);
 
@@ -113,6 +114,7 @@ function initLibraries() {
 function initMarkers() {
   playgrounds.forEach(p => {
     const m = L.marker([p.lat, p.lng], { icon: makePinIcon(p), title: p.name });
+    m._pgId = p.id;
     m.on('click', () => { openDetail(p.id); });
     markersById[p.id] = m;
     cluster.addLayer(m);
@@ -139,6 +141,35 @@ function refreshMarker(id) {
   const m = markersById[id];
   const p = playgrounds.find(x => x.id === id);
   if (m && p) m.setIcon(makePinIcon(p));
+  // Force the cluster group to re-evaluate cluster icons (so the bubble color
+  // updates when its last unvisited child becomes visited).
+  if (cluster && cluster.refreshClusters) cluster.refreshClusters();
+}
+
+function makeClusterIcon(c) {
+  const children = c.getAllChildMarkers();
+  const total = children.length;
+  let visited = 0;
+  children.forEach(m => {
+    // each marker has a `title` set to the playground name; we tagged the
+    // playground id on the marker via `_pgId` for fast lookup
+    if (progress[m._pgId]?.visited) visited += 1;
+  });
+  const allVisited = visited === total && total > 0;
+  const someVisited = visited > 0 && !allVisited;
+  const cls = ['marker-cluster'];
+  if (total < 10) cls.push('marker-cluster-small');
+  else if (total < 100) cls.push('marker-cluster-medium');
+  else cls.push('marker-cluster-large');
+  if (allVisited) cls.push('cluster-all-visited');
+  else if (someVisited) cls.push('cluster-partial');
+  // Tooltip-style label: "3 / 5" when partial, just total otherwise
+  const label = someVisited ? `${visited}/${total}` : `${total}`;
+  return L.divIcon({
+    html: `<div><span>${label}</span></div>`,
+    className: cls.join(' '),
+    iconSize: L.point(40, 40),
+  });
 }
 
 // ---------- UI binding ----------
