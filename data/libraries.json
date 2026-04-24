@@ -1,0 +1,205 @@
+[
+  {
+    "name": "Main",
+    "address": "100 Larkin Street",
+    "zipcode": "94102",
+    "lat": 37.7791882,
+    "lng": -122.4157831
+  },
+  {
+    "name": "Mission Bay",
+    "address": "960 4th Street",
+    "zipcode": "94158",
+    "lat": 37.7753882,
+    "lng": -122.3932
+  },
+  {
+    "name": "Noe Valley",
+    "address": "451 Jersey Street",
+    "zipcode": "94114",
+    "lat": 37.7502382,
+    "lng": -122.4351168
+  },
+  {
+    "name": "Mission",
+    "address": "1234 Valencia Street",
+    "zipcode": "94110",
+    "lat": 37.7531122,
+    "lng": -122.4209687
+  },
+  {
+    "name": "Marina",
+    "address": "1890 Chestnut Street",
+    "zipcode": "94123",
+    "lat": 37.8014046,
+    "lng": -122.4341905
+  },
+  {
+    "name": "Merced",
+    "address": "155 Winston Drive",
+    "zipcode": "94132",
+    "lat": 37.7266222,
+    "lng": -122.4744864
+  },
+  {
+    "name": "North Beach",
+    "address": "850 Columbus Avenue",
+    "zipcode": "94133",
+    "lat": 37.8025463,
+    "lng": -122.4131393
+  },
+  {
+    "name": "Bayview",
+    "address": "5075 3rd Street",
+    "zipcode": "94124",
+    "lat": 37.7325486,
+    "lng": -122.3911444
+  },
+  {
+    "name": "Golden Gate Valley",
+    "address": "1801 Green Street",
+    "zipcode": "94123",
+    "lat": 37.7967946,
+    "lng": -122.42901
+  },
+  {
+    "name": "Ingleside",
+    "address": "1298 Ocean Avenue",
+    "zipcode": "94112",
+    "lat": 37.7241883,
+    "lng": -122.4563043
+  },
+  {
+    "name": "Anza",
+    "address": "550 37th Avenue",
+    "zipcode": "94121",
+    "lat": 37.7785245,
+    "lng": -122.4971772
+  },
+  {
+    "name": "Ocean View",
+    "address": "345 Randolph Street",
+    "zipcode": "94132",
+    "lat": 37.7141366,
+    "lng": -122.465996
+  },
+  {
+    "name": "Chinatown",
+    "address": "1135 Powell Street",
+    "zipcode": "94108",
+    "lat": 37.7952218,
+    "lng": -122.4102159
+  },
+  {
+    "name": "Excelsior",
+    "address": "4400 Mission Street",
+    "zipcode": "94112",
+    "lat": 37.7271267,
+    "lng": -122.4333058
+  },
+  {
+    "name": "Glen Park",
+    "address": "2825 Diamond Street",
+    "zipcode": "94131",
+    "lat": 37.734025,
+    "lng": -122.4335557
+  },
+  {
+    "name": "Ortega",
+    "address": "3223 Ortega Street",
+    "zipcode": "94122",
+    "lat": 37.7511442,
+    "lng": -122.4981075
+  },
+  {
+    "name": "Park",
+    "address": "1833 Page Street",
+    "zipcode": "94117",
+    "lat": 37.7701654,
+    "lng": -122.4510189
+  },
+  {
+    "name": "Sunset",
+    "address": "1305 18th Avenue",
+    "zipcode": "94122",
+    "lat": 37.7633436,
+    "lng": -122.476318
+  },
+  {
+    "name": "Visitacion Valley",
+    "address": "201 Leland Avenue",
+    "zipcode": "94134",
+    "lat": 37.7124788,
+    "lng": -122.4078972
+  },
+  {
+    "name": "West Portal",
+    "address": "190 Lenox Way",
+    "zipcode": "94127",
+    "lat": 37.7414007,
+    "lng": -122.4661504
+  },
+  {
+    "name": "Western Addition",
+    "address": "1550 Scott Street",
+    "zipcode": "94115",
+    "lat": 37.7841139,
+    "lng": -122.4375688
+  },
+  {
+    "name": "Bernal Heights",
+    "address": "500 Cortland Avenue",
+    "zipcode": "94110",
+    "lat": 37.7388702,
+    "lng": -122.4161535
+  },
+  {
+    "name": "Eureka Valley",
+    "address": "1 Jose Sarria Court",
+    "zipcode": "94114",
+    "lat": 37.7640578,
+    "lng": -122.4319063
+  },
+  {
+    "name": "Parkside",
+    "address": "1200 Taraval Street",
+    "zipcode": "94116",
+    "lat": 37.7431598,
+    "lng": -122.4793104
+  },
+  {
+    "name": "Potrero",
+    "address": "1616 20th Street",
+    "zipcode": "94107",
+    "lat": 37.7600821,
+    "lng": -122.3976587
+  },
+  {
+    "name": "Richmond",
+    "address": "351 9th Avenue",
+    "zipcode": "94118",
+    "lat": 37.7818571,
+    "lng": -122.4681151
+  },
+  {
+    "name": "Portola",
+    "address": "380 Bacon Street",
+    "zipcode": "94134",
+    "lat": 37.7271062,
+    "lng": -122.4063713
+  },
+  {
+    "name": "Presidio",
+    "address": "3150 Sacramento Street",
+    "zipcode": "94115",
+    "lat": 37.7888554,
+    "lng": -122.4448528
+  },
+  {
+    "name": "Treasure Island",
+    "address": "800 Avenue H",
+    "zipcode": "94130",
+    "lat": 37.8235752,
+    "lng": -122.3688561
+  }
+]

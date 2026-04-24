@@ -194,6 +194,13 @@ dialog#detail::backdrop { background: rgba(15, 18, 25, 0.45); }
 /* Trip route line */
 .trip-line { stroke: #5b6bff; stroke-width: 4; stroke-dasharray: 8 6; opacity: 0.85; fill: none; }
 
+/* Library dot legend swatch */
+.lib-dot {
+  display: inline-block; width: 10px; height: 10px; border-radius: 50%;
+  background: #1e88ff; border: 2px solid #fff; box-shadow: 0 0 0 1px #1e88ff;
+  vertical-align: middle; margin-right: 2px;
+}
+
 /* Cluster overrides */
 .marker-cluster-small { background: rgba(227,88,44,0.25); }
 .marker-cluster-small div { background: rgba(227,88,44,0.85); color: white; font-weight: 600; }

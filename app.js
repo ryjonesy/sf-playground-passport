@@ -25,6 +25,8 @@ const BADGES = [
 
 // ---------- State ----------
 let playgrounds = [];
+let libraries = [];
+let librariesLayer = null;
 let progress = loadProgress();   // { id: { visited, rating, notes, date } }
 let map, cluster, markersById = {}, activeId = null;
 let trip = [];
@@ -36,10 +38,14 @@ let poiCache = JSON.parse(localStorage.getItem(POI_CACHE_KEY) || '{}');
 init();
 
 async function init() {
-  playgrounds = await fetch('./data/playgrounds.json').then(r => r.json());
+  [playgrounds, libraries] = await Promise.all([
+    fetch('./data/playgrounds.json').then(r => r.json()),
+    fetch('./data/libraries.json').then(r => r.json()).catch(() => []),
+  ]);
 
   initMap();
   initMarkers();
+  initLibraries();
   bindUI();
   renderList();
   updatePassport();
@@ -79,6 +85,29 @@ function initMap() {
   map.addLayer(cluster);
 
   poiLayer = L.layerGroup().addTo(map);
+  librariesLayer = L.layerGroup().addTo(map);
+}
+
+function initLibraries() {
+  libraries.forEach(lib => {
+    const marker = L.circleMarker([lib.lat, lib.lng], {
+      radius: 7,
+      color: '#ffffff',
+      weight: 2,
+      fillColor: '#1e88ff',
+      fillOpacity: 0.95,
+      className: 'library-dot',
+    });
+    const popup = `
+      <strong>📚 ${escapeHtml(lib.name)} Branch Library</strong><br>
+      <span style="color:#66707b;font-size:12px">${escapeHtml(lib.address)}, SF ${escapeHtml(lib.zipcode)}</span><br>
+      <a href="https://sfpl.org/locations" target="_blank" rel="noopener">Hours & info</a> ·
+      <a href="https://www.google.com/maps/dir/?api=1&destination=${lib.lat},${lib.lng}" target="_blank" rel="noopener">Directions</a>
+    `;
+    marker.bindPopup(popup);
+    marker.bindTooltip(`📚 ${lib.name}`, { direction: 'top', offset: [0, -4] });
+    librariesLayer.addLayer(marker);
+  });
 }
 
 function initMarkers() {
@@ -127,6 +156,15 @@ function bindUI() {
 
   document.querySelectorAll('.layerToggle').forEach(el => el.addEventListener('change', refreshPOIs));
   document.getElementById('radiusSel').addEventListener('change', refreshPOIs);
+
+  // SFPL libraries toggle
+  const libToggle = document.getElementById('fltLibraries');
+  const libCount = document.getElementById('libCount');
+  if (libCount) libCount.textContent = libraries.length ? `(${libraries.length})` : '';
+  if (libToggle) libToggle.addEventListener('change', () => {
+    if (libToggle.checked) map.addLayer(librariesLayer);
+    else map.removeLayer(librariesLayer);
+  });
 
   document.getElementById('toggleSidebar').addEventListener('click', () => document.body.classList.toggle('sb-open'));
 
