@@ -197,7 +197,26 @@ function bindUI() {
     else map.removeLayer(librariesLayer);
   });
 
-  document.getElementById('toggleSidebar').addEventListener('click', () => document.body.classList.toggle('sb-open'));
+  const toggleBtn = document.getElementById('toggleSidebar');
+  const toggleIcon = document.getElementById('toggleIcon');
+  const updateToggleIcon = () => {
+    if (toggleIcon) toggleIcon.textContent = document.body.classList.contains('sb-open') ? '✕' : '☰';
+  };
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('sb-open');
+    updateToggleIcon();
+  });
+  // Close sidebar when tapping the backdrop on mobile
+  document.addEventListener('click', (e) => {
+    if (!document.body.classList.contains('sb-open')) return;
+    if (window.innerWidth > 760) return;
+    const sidebar = document.getElementById('sidebar');
+    if (sidebar.contains(e.target)) return;
+    if (toggleBtn.contains(e.target)) return;
+    // Tap on map / backdrop closes sidebar
+    document.body.classList.remove('sb-open');
+    updateToggleIcon();
+  });
 
   // Detail dialog wiring
   const dlg = document.getElementById('detail');
