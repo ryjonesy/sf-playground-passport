@@ -29,6 +29,14 @@ let libraries = [];
 let librariesLayer = null;
 let museums = [];
 let museumsLayer = null;
+let restrooms = [];
+let restroomsLayer = null;
+let pools = [];
+let poolsLayer = null;
+let beaches = [];
+let beachesLayer = null;
+let iceCream = [];
+let iceCreamLayer = null;
 let progress = loadProgress();   // { id: { visited, rating, notes, date } }
 let map, cluster, markersById = {}, activeId = null;
 let trip = [];
@@ -40,16 +48,21 @@ let poiCache = JSON.parse(localStorage.getItem(POI_CACHE_KEY) || '{}');
 init();
 
 async function init() {
-  [playgrounds, libraries, museums] = await Promise.all([
+  [playgrounds, libraries, museums, restrooms, pools, beaches, iceCream] = await Promise.all([
     fetch('./data/playgrounds.json').then(r => r.json()),
     fetch('./data/libraries.json').then(r => r.json()).catch(() => []),
     fetch('./data/museums.json').then(r => r.json()).catch(() => []),
+    fetch('./data/restrooms.json').then(r => r.json()).catch(() => []),
+    fetch('./data/pools.json').then(r => r.json()).catch(() => []),
+    fetch('./data/beaches.json').then(r => r.json()).catch(() => []),
+    fetch('./data/ice_cream.json').then(r => r.json()).catch(() => []),
   ]);
 
   initMap();
   initMarkers();
   initLibraries();
   initMuseums();
+  initSimpleOverlays();
   bindUI();
   renderList();
   updatePassport();
@@ -92,6 +105,87 @@ function initMap() {
   poiLayer = L.layerGroup().addTo(map);
   librariesLayer = L.layerGroup().addTo(map);
   museumsLayer = L.layerGroup().addTo(map);
+  // Note: restrooms/pools/beaches/iceCream layers are created lazily in
+  // initSimpleOverlays() and added to the map only if the user toggles them on.
+}
+
+// Build a layer of small colored circle markers for a simple overlay (no
+// per-feature progress, just a list of locations).
+function buildSimpleOverlay(items, opts) {
+  const layer = L.layerGroup();
+  items.forEach(it => {
+    if (typeof it.lat !== 'number' || typeof it.lng !== 'number') return;
+    const marker = L.circleMarker([it.lat, it.lng], {
+      radius: opts.radius || 6,
+      color: '#ffffff',
+      weight: 2,
+      fillColor: opts.color,
+      fillOpacity: 0.95,
+      className: opts.className || '',
+    });
+    const popup = opts.popup(it);
+    marker.bindPopup(popup);
+    if (opts.tooltip) marker.bindTooltip(opts.tooltip(it), { direction: 'top', offset: [0, -4] });
+    layer.addLayer(marker);
+  });
+  return layer;
+}
+
+function initSimpleOverlays() {
+  // Restrooms (slate-blue, smaller dots since there are many)
+  restroomsLayer = buildSimpleOverlay(restrooms, {
+    color: '#2c7a7b', radius: 5, className: 'restroom-dot-marker',
+    popup: r => {
+      const isPit = r.kind === 'pitstop';
+      const icon = isPit ? '🚮' : '🚹';
+      const label = isPit ? 'Pit Stop' : 'Park Restroom';
+      const hours = r.hours ? `<br><span style="font-size:12px">${escapeHtml(r.hours)}</span>` : '';
+      return `
+        <strong>${icon} ${escapeHtml(r.name)}</strong><br>
+        <span style="color:#66707b;font-size:12px">${escapeHtml(label)} ${escapeHtml(r.address || '')}</span>${hours}<br>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=${r.lat},${r.lng}" target="_blank" rel="noopener">Directions</a>
+      `;
+    },
+    tooltip: r => `${r.kind === 'pitstop' ? '🚮' : '🚹'} ${r.name}`,
+  });
+
+  // Pools (deep blue)
+  poolsLayer = buildSimpleOverlay(pools, {
+    color: '#0f6dcf', className: 'pool-dot-marker',
+    popup: p => `
+      <strong>🏊 ${escapeHtml(p.name)}</strong><br>
+      <span style="color:#66707b;font-size:12px">${escapeHtml(p.address)}</span><br>
+      <span style="font-size:12px">${escapeHtml(p.blurb || '')}</span><br>
+      <a href="${p.url}" target="_blank" rel="noopener">Pool info</a> ·
+      <a href="https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.lng}" target="_blank" rel="noopener">Directions</a>
+    `,
+    tooltip: p => `🏊 ${p.name}`,
+  });
+
+  // Beaches (sandy yellow/tan)
+  beachesLayer = buildSimpleOverlay(beaches, {
+    color: '#d9a441', className: 'beach-dot-marker',
+    popup: b => `
+      <strong>🏖 ${escapeHtml(b.name)}</strong><br>
+      <span style="color:#66707b;font-size:12px">${escapeHtml(b.address || '')}</span><br>
+      <span style="font-size:12px">${escapeHtml(b.blurb || '')}</span><br>
+      <a href="${b.url}" target="_blank" rel="noopener">Beach info</a> ·
+      <a href="https://www.google.com/maps/dir/?api=1&destination=${b.lat},${b.lng}" target="_blank" rel="noopener">Directions</a>
+    `,
+    tooltip: b => `🏖 ${b.name}`,
+  });
+
+  // Ice cream (pink)
+  iceCreamLayer = buildSimpleOverlay(iceCream, {
+    color: '#ec7ad6', className: 'icecream-dot-marker',
+    popup: ic => `
+      <strong>🍦 ${escapeHtml(ic.name)}</strong><br>
+      <span style="color:#66707b;font-size:12px">${escapeHtml(ic.address)}</span><br>
+      <span style="font-size:12px">${escapeHtml(ic.blurb || '')}</span><br>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=${ic.lat},${ic.lng}" target="_blank" rel="noopener">Directions</a>
+    `,
+    tooltip: ic => `🍦 ${ic.name}`,
+  });
 }
 
 function initMuseums() {
@@ -234,6 +328,28 @@ function bindUI() {
   if (muToggle) muToggle.addEventListener('change', () => {
     if (muToggle.checked) map.addLayer(museumsLayer);
     else map.removeLayer(museumsLayer);
+  });
+
+  // Generic on-demand overlay toggles (default off — they're noisy if all on).
+  // Each entry: [toggleId, countId, items array, layer reference]
+  const simpleOverlays = [
+    { toggleId: 'fltRestrooms', countId: 'rrCount',  items: restrooms, getLayer: () => restroomsLayer },
+    { toggleId: 'fltPools',     countId: 'poolCount', items: pools,    getLayer: () => poolsLayer },
+    { toggleId: 'fltBeaches',   countId: 'beachCount', items: beaches, getLayer: () => beachesLayer },
+    { toggleId: 'fltIceCream',  countId: 'icCount',   items: iceCream, getLayer: () => iceCreamLayer },
+  ];
+  simpleOverlays.forEach(o => {
+    const toggle = document.getElementById(o.toggleId);
+    const count = document.getElementById(o.countId);
+    if (count) count.textContent = o.items.length ? `(${o.items.length})` : '';
+    if (!toggle) return;
+    // Apply initial state (in case user reloaded with checkbox already checked)
+    if (toggle.checked) map.addLayer(o.getLayer());
+    toggle.addEventListener('change', () => {
+      const layer = o.getLayer();
+      if (toggle.checked) map.addLayer(layer);
+      else map.removeLayer(layer);
+    });
   });
 
   const toggleBtn = document.getElementById('toggleSidebar');

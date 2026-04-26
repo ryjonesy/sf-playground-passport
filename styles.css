@@ -212,6 +212,17 @@ dialog#detail::backdrop { background: rgba(15, 18, 25, 0.45); }
   vertical-align: middle; margin-right: 2px;
 }
 
+/* Additional overlay legend swatches (restrooms, pools, beaches, ice cream) */
+.restroom-dot, .pool-dot, .beach-dot, .icecream-dot {
+  display: inline-block; width: 10px; height: 10px; border-radius: 50%;
+  border: 2px solid #fff;
+  vertical-align: middle; margin-right: 2px;
+}
+.restroom-dot { background: #2c7a7b; box-shadow: 0 0 0 1px #2c7a7b; }
+.pool-dot     { background: #0f6dcf; box-shadow: 0 0 0 1px #0f6dcf; }
+.beach-dot    { background: #d9a441; box-shadow: 0 0 0 1px #d9a441; }
+.icecream-dot { background: #ec7ad6; box-shadow: 0 0 0 1px #ec7ad6; }
+
 /* Cluster overrides — orange by default, green when every child is visited,
    two-tone (orange/green) when only some children are visited */
 .marker-cluster-small { background: rgba(227,88,44,0.25); }

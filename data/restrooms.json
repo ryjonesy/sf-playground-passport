@@ -1,0 +1,615 @@
+[
+  {
+    "name": "Golden Gate Park - Section 7 \u2013 Big Rec Restroom",
+    "kind": "park",
+    "address": "501 Stanyan St",
+    "lat": 37.768536,
+    "lng": -122.465376
+  },
+  {
+    "name": "Golden Gate Park - Section 7 \u2013 Robin Williams Meadow Restroom",
+    "kind": "park",
+    "address": "501 Stanyan St",
+    "lat": 37.768188,
+    "lng": -122.458923
+  },
+  {
+    "name": "Golden Gate Park - Section 7 \u2013 Nursery Restrooms",
+    "kind": "park",
+    "address": "501 Stanyan St",
+    "lat": 37.76823,
+    "lng": -122.462146
+  },
+  {
+    "name": "Golden Gate Park - Section 6 \u2013 Chain of Lakes Restroom",
+    "kind": "park",
+    "address": "501 Stanyan St",
+    "lat": 37.767975,
+    "lng": -122.501819
+  },
+  {
+    "name": "Golden Gate Park - Section 6 \u2013 Beach Chalet Soccer Fields Maintenance Building",
+    "kind": "park",
+    "address": "501 Stanyan St",
+    "lat": 37.766891,
+    "lng": -122.507666
+  },
+  {
+    "name": "Golden Gate Park - Section 6 \u2013 Beach Chalet Soccer Fields Restrooms",
+    "kind": "park",
+    "address": "501 Stanyan St",
+    "lat": 37.767265,
+    "lng": -122.507969
+  },
+  {
+    "name": "Golden Gate Park - Section 6 \u2013 Boat CPA Restroom",
+    "kind": "park",
+    "address": "501 Stanyan St",
+    "lat": 37.764479,
+    "lng": -122.504959
+  },
+  {
+    "name": "Golden Gate Park - Section 5 \u2013 Hellman Hollow Restrooms",
+    "kind": "park",
+    "address": "501 Stanyan St",
+    "lat": 37.769535,
+    "lng": -122.484706
+  },
+  {
+    "name": "Golden Gate Park - Section 5 \u2013 Polo Field North Restrooms",
+    "kind": "park",
+    "address": "501 Stanyan St",
+    "lat": 37.769423,
+    "lng": -122.493101
+  },
+  {
+    "name": "Golden Gate Park - Section 5 \u2013 Polo Field Restroom",
+    "kind": "park",
+    "address": "501 Stanyan St",
+    "lat": 37.76679,
+    "lng": -122.492794
+  },
+  {
+    "name": "Golden Gate Park - Section 3 \u2013 South Restrooms",
+    "kind": "park",
+    "address": "501 Stanyan St",
+    "lat": 37.766805,
+    "lng": -122.468358
+  },
+  {
+    "name": "Golden Gate Park - Section 1 \u2013 Conservatory Restrooms",
+    "kind": "park",
+    "address": "501 Stanyan St",
+    "lat": 37.772602,
+    "lng": -122.460789
+  },
+  {
+    "name": "Golden Gate Park - Section 3 \u2013 North Restrooms",
+    "kind": "park",
+    "address": "",
+    "lat": 37.768888,
+    "lng": -122.470846
+  },
+  {
+    "name": "Lincoln Park \u2013 Restroom",
+    "kind": "park",
+    "address": "100 34th Ave",
+    "lat": 37.784221,
+    "lng": -122.501824
+  },
+  {
+    "name": "Michelangelo Playground \u2013 Restrooms",
+    "kind": "park",
+    "address": "1055 Greenwich St",
+    "lat": 37.801288,
+    "lng": -122.416802
+  },
+  {
+    "name": "Lafayette Park \u2013 Restrooms",
+    "kind": "park",
+    "address": "2101 Washington St",
+    "lat": 37.791724,
+    "lng": -122.428152
+  },
+  {
+    "name": "Yacht Harbor and Marina Green \u2013 Marina Green West Restroom",
+    "kind": "park",
+    "address": "1 Marina Green Dr",
+    "lat": 37.805671,
+    "lng": -122.448287
+  },
+  {
+    "name": "Yacht Harbor and Marina Green \u2013 Marina Green East Restroom",
+    "kind": "park",
+    "address": "1 Marina Green Dr",
+    "lat": 37.806483,
+    "lng": -122.434534
+  },
+  {
+    "name": "Alta Plaza Park \u2013 Restrooms",
+    "kind": "park",
+    "address": "2501 Jackson St",
+    "lat": 37.791246,
+    "lng": -122.438168
+  },
+  {
+    "name": "Francisco Park \u2013 Restrooms",
+    "kind": "park",
+    "address": "2745 Larkin St",
+    "lat": 37.803565,
+    "lng": -122.421281
+  },
+  {
+    "name": "Mountain Lake Park \u2013 Mountain Lake Restrooms",
+    "kind": "park",
+    "address": "1 11th Ave",
+    "lat": 37.786978,
+    "lng": -122.47177
+  },
+  {
+    "name": "Golden Gate Park - Section 1 \u2013 Horseshoe Pits Restroom",
+    "kind": "park",
+    "address": "501 Stanyan St",
+    "lat": 37.773753,
+    "lng": -122.455995
+  },
+  {
+    "name": "Golden Gate Park - Section 1 \u2013 Restrooms",
+    "kind": "park",
+    "address": "501 Stanyan St",
+    "lat": 37.772367,
+    "lng": -122.447663
+  },
+  {
+    "name": "Golden Gate Park - Section 3 \u2013 Mens Bathroom",
+    "kind": "park",
+    "address": "",
+    "lat": 37.770446,
+    "lng": -122.469446
+  },
+  {
+    "name": "Golden Gate Park - Section 3 \u2013 Japanese Tea Garden Female Restroom",
+    "kind": "park",
+    "address": "501 Stanyan St",
+    "lat": 37.770515,
+    "lng": -122.46947
+  },
+  {
+    "name": "Golden Gate Park - Section 2 \u2013 Bandstand Public Restrooms",
+    "kind": "park",
+    "address": "",
+    "lat": 37.769808,
+    "lng": -122.468651
+  },
+  {
+    "name": "Golden Gate Park - Section 4 \u2013 Rose Garden Bathroom",
+    "kind": "park",
+    "address": "501 Stanyan St",
+    "lat": 37.771522,
+    "lng": -122.472026
+  },
+  {
+    "name": "Golden Gate Park - Section 4 \u2013 Blue Heron Lake Restrooms",
+    "kind": "park",
+    "address": "501 Stanyan St",
+    "lat": 37.77098,
+    "lng": -122.476877
+  },
+  {
+    "name": "Golden Gate Park - Section 4 \u2013 Mother's Meadow Restroom - Male Restroom",
+    "kind": "park",
+    "address": "",
+    "lat": 37.766385,
+    "lng": -122.476697
+  },
+  {
+    "name": "Washington Square Restrooms",
+    "kind": "park",
+    "address": "600 Columbus Ave",
+    "lat": 37.801066,
+    "lng": -122.410655
+  },
+  {
+    "name": "St. Mary's Square \u2013 Restrooms",
+    "kind": "park",
+    "address": "633 California St",
+    "lat": 37.79172,
+    "lng": -122.405092
+  },
+  {
+    "name": "Portsmouth Square \u2013 Restrooms",
+    "kind": "park",
+    "address": "745 Kearny St",
+    "lat": 37.7946,
+    "lng": -122.405651
+  },
+  {
+    "name": "Telegraph Hill - Pioneer Park \u2013 Pioneer Park Restroom",
+    "kind": "park",
+    "address": "1 Telegraph Hill Blvd",
+    "lat": 37.802599,
+    "lng": -122.406053
+  },
+  {
+    "name": "Angelo J. Rossi Playground \u2013 Annex Restrooms",
+    "kind": "park",
+    "address": "600 Arguello Blvd",
+    "lat": 37.777988,
+    "lng": -122.457672
+  },
+  {
+    "name": "DuPont Tennis Courts \u2013 Restrooms",
+    "kind": "park",
+    "address": "336 31st Ave",
+    "lat": 37.782884,
+    "lng": -122.490853
+  },
+  {
+    "name": "Victoria Manalo Draves Park \u2013 Restroom",
+    "kind": "park",
+    "address": "55 Sherman St",
+    "lat": 37.776759,
+    "lng": -122.406044
+  },
+  {
+    "name": "Alamo Square \u2013 Restrooms",
+    "kind": "park",
+    "address": "1081 Fulton St",
+    "lat": 37.776625,
+    "lng": -122.433916
+  },
+  {
+    "name": "Alamo Square \u2013 Restrooms",
+    "kind": "park",
+    "address": "1081 Fulton St",
+    "lat": 37.776079,
+    "lng": -122.434332
+  },
+  {
+    "name": "Sunset Dunes Highway Judah Restrooms",
+    "kind": "park",
+    "address": "",
+    "lat": 37.760245,
+    "lng": -122.509567
+  },
+  {
+    "name": "Lower Great Highway Taraval Restrooms",
+    "kind": "park",
+    "address": "",
+    "lat": 37.741426,
+    "lng": -122.50708
+  },
+  {
+    "name": "Aptos Playground \u2013 Restroom",
+    "kind": "park",
+    "address": "139 Aptos Ave",
+    "lat": 37.72851,
+    "lng": -122.466035
+  },
+  {
+    "name": "McCoppin Square \u2013 Restroom",
+    "kind": "park",
+    "address": "2354 24th Ave",
+    "lat": 37.743533,
+    "lng": -122.480915
+  },
+  {
+    "name": "Parkside Square \u2013 Restroom",
+    "kind": "park",
+    "address": "2680 28th Ave",
+    "lat": 37.738337,
+    "lng": -122.483723
+  },
+  {
+    "name": "Sigmund Stern Recreation Grove \u2013 Restrooms",
+    "kind": "park",
+    "address": "2899 19th Ave",
+    "lat": 37.736201,
+    "lng": -122.478223
+  },
+  {
+    "name": "Sigmund Stern Recreation Grove \u2013 Goldman Restrooms",
+    "kind": "park",
+    "address": "2899 19th Ave",
+    "lat": 37.735587,
+    "lng": -122.478832
+  },
+  {
+    "name": "Carl Larsen Park \u2013 Restrooms",
+    "kind": "park",
+    "address": "2695 19th Ave",
+    "lat": 37.739597,
+    "lng": -122.47617
+  },
+  {
+    "name": "Balboa Park \u2013 East Restroom",
+    "kind": "park",
+    "address": "51 Havelock St",
+    "lat": 37.725188,
+    "lng": -122.444245
+  },
+  {
+    "name": "Balboa Park \u2013 West Restroom",
+    "kind": "park",
+    "address": "51 Havelock St",
+    "lat": 37.725149,
+    "lng": -122.44553
+  },
+  {
+    "name": "Douglass Playground \u2013 Restroom",
+    "kind": "park",
+    "address": "1098 Douglass St",
+    "lat": 37.746283,
+    "lng": -122.439682
+  },
+  {
+    "name": "States Street Playground \u2013 Restrooms",
+    "kind": "park",
+    "address": "122 States St",
+    "lat": 37.76377,
+    "lng": -122.438583
+  },
+  {
+    "name": "Sunnyside Playground \u2013 Restrooms",
+    "kind": "park",
+    "address": "233 Melrose Avenue",
+    "lat": 37.733899,
+    "lng": -122.448278
+  },
+  {
+    "name": "Noe Valley Town Square \u2013 Noe Square Restrooms",
+    "kind": "park",
+    "address": "3861 24th St",
+    "lat": 37.75127,
+    "lng": -122.428845
+  },
+  {
+    "name": "Noe Valley Town Square Restroom Bldg.",
+    "kind": "park",
+    "address": "",
+    "lat": 37.751497,
+    "lng": -122.428878
+  },
+  {
+    "name": "Noe Valley Courts \u2013 Restrooms",
+    "kind": "park",
+    "address": "780 Douglass St",
+    "lat": 37.751489,
+    "lng": -122.439217
+  },
+  {
+    "name": "Holly Park \u2013 Restrooms",
+    "kind": "park",
+    "address": "",
+    "lat": 37.737123,
+    "lng": -122.420586
+  },
+  {
+    "name": "Mission Dolores Park \u2013 Mission Dolores South Restrooms",
+    "kind": "park",
+    "address": "646 Dolores St",
+    "lat": 37.758564,
+    "lng": -122.426421
+  },
+  {
+    "name": "Mission Dolores Park \u2013 Mission Dolores North Restrooms",
+    "kind": "park",
+    "address": "646 Dolores St",
+    "lat": 37.760795,
+    "lng": -122.427749
+  },
+  {
+    "name": "Youngblood-Coleman Playground \u2013 Youngblood Coleman Restrooms",
+    "kind": "park",
+    "address": "1398 Hudson Ave",
+    "lat": 37.73921,
+    "lng": -122.385731
+  },
+  {
+    "name": "Adam Rodgers Park \u2013 Restrooms",
+    "kind": "park",
+    "address": "1215 Quesada Ave",
+    "lat": 37.730884,
+    "lng": -122.383734
+  },
+  {
+    "name": "John McLaren Park \u2013 McLaren Bike Muni Restroom",
+    "kind": "park",
+    "address": "",
+    "lat": 37.71409,
+    "lng": -122.423316
+  },
+  {
+    "name": "John McLaren Park \u2013 McLaren Bike Restroom",
+    "kind": "park",
+    "address": "",
+    "lat": 37.714135,
+    "lng": -122.423291
+  },
+  {
+    "name": "John McLaren Park \u2013 McLaren Park Oxford St Restroom",
+    "kind": "park",
+    "address": "",
+    "lat": 37.722952,
+    "lng": -122.418561
+  },
+  {
+    "name": "John McLaren Park \u2013 Jerry Garcia Amphitheatre Restroom",
+    "kind": "park",
+    "address": "",
+    "lat": 37.720863,
+    "lng": -122.41692
+  },
+  {
+    "name": "Hilltop Park \u2013 Restroom",
+    "kind": "park",
+    "address": "2 Willie B Kennedy Dr",
+    "lat": 37.733071,
+    "lng": -122.382577
+  },
+  {
+    "name": "Gilman Playground \u2013 Restrooms",
+    "kind": "park",
+    "address": "993 Gilman Ave",
+    "lat": 37.717183,
+    "lng": -122.388786
+  },
+  {
+    "name": "Bayview K.C. Jones Playground \u2013 Restrooms",
+    "kind": "park",
+    "address": "5701 3rd St",
+    "lat": 37.725562,
+    "lng": -122.393033
+  },
+  {
+    "name": "Picnic Restrooms",
+    "kind": "park",
+    "address": "100 John F Shelley Dr",
+    "lat": 37.722117,
+    "lng": -122.420634
+  },
+  {
+    "name": "Outer Sunset Pit Stop",
+    "kind": "pitstop",
+    "address": "Judah and La Playa streets (Rec Park)",
+    "hours": "Daily 8am to 8pm",
+    "neighborhood": "Sunset/Parkside",
+    "lat": 37.760308,
+    "lng": -122.509162
+  },
+  {
+    "name": "Mission Pit Stop",
+    "kind": "pitstop",
+    "address": "Franklin Square Park in the parking lot adjacent to 300 Hampshire St.",
+    "hours": "Daily 7am to 7pm",
+    "neighborhood": "Mission",
+    "lat": 37.765187,
+    "lng": -122.408337
+  },
+  {
+    "name": "Tenderloin Pit Stop",
+    "kind": "pitstop",
+    "address": "Eddy and Larkin streets",
+    "hours": "Daily 6pm to 6am",
+    "neighborhood": "Tenderloin",
+    "lat": 37.783353,
+    "lng": -122.41769
+  },
+  {
+    "name": "Embarcadero Pit Stop",
+    "kind": "pitstop",
+    "address": "Embarcadero Plaza (JCDecaux)",
+    "hours": "Daily 9am to 5pm",
+    "neighborhood": "Financial District/South Beach",
+    "lat": 37.794628,
+    "lng": -122.394598
+  },
+  {
+    "name": "Ocean Beach Pit Stop",
+    "kind": "pitstop",
+    "address": "Great Highway near Beach Chalet",
+    "hours": "Daily 11am to 6pm",
+    "neighborhood": "Golden Gate Park",
+    "lat": 37.767595,
+    "lng": -122.510779
+  },
+  {
+    "name": "Mission Pit Stop",
+    "kind": "pitstop",
+    "address": "344 14th St.",
+    "hours": "Daily 7am to 3pm",
+    "neighborhood": "Mission",
+    "lat": 37.768515,
+    "lng": -122.421154
+  },
+  {
+    "name": "Mid-Market Pit Stop",
+    "kind": "pitstop",
+    "address": "Hallidie Plaza (JCDecaux)",
+    "hours": "Daily 7am to 7pm",
+    "neighborhood": "Tenderloin",
+    "lat": 37.784414,
+    "lng": -122.40778
+  },
+  {
+    "name": "Tenderloin Pit Stop",
+    "kind": "pitstop",
+    "address": "Ellis and Jones streets",
+    "hours": "Daily 8am to 8pm",
+    "neighborhood": "Tenderloin",
+    "lat": 37.784899,
+    "lng": -122.412773
+  },
+  {
+    "name": "SoMa Pit Stop",
+    "kind": "pitstop",
+    "address": "Victoria Manalo Draves Park (Rec Park)",
+    "hours": "Daily 9am to 5pm",
+    "neighborhood": "South of Market",
+    "lat": 37.77676,
+    "lng": -122.406024
+  },
+  {
+    "name": "Tenderloin Pit Stop",
+    "kind": "pitstop",
+    "address": "474 O'Farrell St.",
+    "hours": "Open 24 hours",
+    "neighborhood": "Tenderloin",
+    "lat": 37.785899,
+    "lng": -122.411936
+  },
+  {
+    "name": "Civic Center Pit Stop",
+    "kind": "pitstop",
+    "address": "Grove and Larkin streets (JCDecaux)",
+    "hours": "Daily 7am to 7pm",
+    "neighborhood": "Tenderloin",
+    "lat": 37.778732,
+    "lng": -122.416928
+  },
+  {
+    "name": "Mission Pit Stop",
+    "kind": "pitstop",
+    "address": "24th and Mission streets (JCDecaux)",
+    "hours": "Daily 9am to 5pm",
+    "neighborhood": "Mission",
+    "lat": 37.752175,
+    "lng": -122.418577
+  },
+  {
+    "name": "Tenderloin Pit Stop",
+    "kind": "pitstop",
+    "address": "Turk and Hyde streets",
+    "hours": "Daily 8am to 8pm",
+    "neighborhood": "Tenderloin",
+    "lat": 37.782536,
+    "lng": -122.41574
+  },
+  {
+    "name": "Mid-Market Pit Stop",
+    "kind": "pitstop",
+    "address": "U.N. Plaza (JCDecaux)",
+    "hours": "Open 24 hours",
+    "neighborhood": "Tenderloin",
+    "lat": 37.780143,
+    "lng": -122.413082
+  },
+  {
+    "name": "Mission Pit Stop",
+    "kind": "pitstop",
+    "address": "16th and Mission streets (JCDecaux)",
+    "hours": "Open 24 hours",
+    "neighborhood": "Mission",
+    "lat": 37.764947,
+    "lng": -122.420017
+  },
+  {
+    "name": "Castro Pit Stop",
+    "kind": "pitstop",
+    "address": "Market and Castro streets (JCDecaux)",
+    "hours": "Daily 8am to 8pm",
+    "neighborhood": "Castro/Upper Market",
+    "lat": 37.762773,
+    "lng": -122.434805
+  }
+]

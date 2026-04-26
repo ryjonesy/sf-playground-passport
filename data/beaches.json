@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Crissy Field East Beach",
+    "address": "603 Mason St, San Francisco, CA 94129",
+    "url": "https://www.parksconservancy.org/parks/crissy-field",
+    "blurb": "Wide flat beach with Golden Gate views and a calm cove for kids \u2014 Presidio.",
+    "lat": 37.803903,
+    "lng": -122.455456
+  },
+  {
+    "name": "Baker Beach",
+    "address": "1504 Pershing Dr, San Francisco, CA 94129",
+    "url": "https://www.parksconservancy.org/parks/baker-beach",
+    "blurb": "Iconic GG-Bridge view beach in the Presidio (south end family-friendly).",
+    "lat": 37.792394,
+    "lng": -122.480201
+  },
+  {
+    "name": "Ocean Beach",
+    "address": "1000 Great Hwy, San Francisco, CA 94121",
+    "url": "https://www.nps.gov/goga/planyourvisit/oceanbeach.htm",
+    "blurb": "3-mile sandy beach along Great Highway. Strong currents \u2014 no swimming, but great for kites & sand.",
+    "lat": 37.769474,
+    "lng": -122.509984
+  },
+  {
+    "name": "China Beach",
+    "address": "390 Sea Cliff Ave, San Francisco, CA 94121",
+    "url": "https://www.parksconservancy.org/parks/china-beach",
+    "blurb": "Small protected cove in Sea Cliff \u2014 calmer water, great for little kids.",
+    "lat": 37.787686,
+    "lng": -122.490123
+  },
+  {
+    "name": "Aquatic Park Cove",
+    "address": "499 Jefferson St, San Francisco, CA 94109",
+    "url": "https://www.nps.gov/safr/planyourvisit/visit-the-park.htm",
+    "blurb": "Calm, swimmable cove next to Ghirardelli Square with sand and sea-lion sightings.",
+    "lat": 37.807502,
+    "lng": -122.420543
+  },
+  {
+    "name": "Heron's Head Park",
+    "address": "Jennings St & Cargo Way, San Francisco, CA 94124",
+    "url": "https://sfport.com/herons-head-park",
+    "blurb": "Bayview shoreline park with a nature trail and EcoCenter; great bird-watching.",
+    "lat": 37.7374,
+    "lng": -122.3737
+  },
+  {
+    "name": "Marshall's Beach",
+    "address": "Marshall's Beach Trail, San Francisco, CA 94129",
+    "url": "https://www.parksconservancy.org/parks/marshalls-beach",
+    "blurb": "Dramatic GG-Bridge views via a short Presidio hike (steep stairs \u2014 older kids).",
+    "lat": 37.801831,
+    "lng": -122.479901
+  },
+  {
+    "name": "Pier 7 Promenade",
+    "address": "Pier 7, The Embarcadero, San Francisco, CA 94111",
+    "url": "https://sfport.com/pier-7",
+    "blurb": "Not technically a beach, but a wide waterfront promenade kids love biking.",
+    "lat": 37.7991,
+    "lng": -122.397
+  }
+]

@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Mitchell's Ice Cream",
+    "address": "688 San Jose Ave, San Francisco, CA 94110",
+    "blurb": "1953-era Bernal Heights classic \u2014 Mexican chocolate, ube, mango.",
+    "lat": 37.744168,
+    "lng": -122.422833
+  },
+  {
+    "name": "Bi-Rite Creamery",
+    "address": "3692 18th St, San Francisco, CA 94110",
+    "blurb": "Mission salted-caramel destination with the Dolores Park line.",
+    "lat": 37.76157,
+    "lng": -122.425662
+  },
+  {
+    "name": "Bi-Rite Creamery (Divisadero)",
+    "address": "550 Divisadero St, San Francisco, CA 94117",
+    "blurb": "Second Bi-Rite scoop shop, often shorter line.",
+    "lat": 37.774509,
+    "lng": -122.437844
+  },
+  {
+    "name": "Smitten Ice Cream (Hayes Valley)",
+    "address": "432 Octavia St #1A, San Francisco, CA 94102",
+    "blurb": "Liquid-nitrogen ice cream made to order \u2014 kids love watching it freeze.",
+    "lat": 37.776342,
+    "lng": -122.424196
+  },
+  {
+    "name": "Garden Creamery",
+    "address": "3566 20th St, San Francisco, CA 94110",
+    "blurb": "Tropical & Asian-inspired flavors in the Mission.",
+    "lat": 37.758744,
+    "lng": -122.420412
+  },
+  {
+    "name": "Salt & Straw (Hayes Valley)",
+    "address": "586 Hayes St, San Francisco, CA 94102",
+    "blurb": "Adventurous flavors and free taste-tests with no eye-rolls.",
+    "lat": 37.776612,
+    "lng": -122.426062
+  },
+  {
+    "name": "Salt & Straw (Fillmore)",
+    "address": "2201 Fillmore St, San Francisco, CA 94115",
+    "blurb": "Pacific Heights spot for the same Salt & Straw flavors.",
+    "lat": 37.789947,
+    "lng": -122.434224
+  },
+  {
+    "name": "Swensen's Ice Cream (Russian Hill)",
+    "address": "1999 Hyde St, San Francisco, CA 94109",
+    "blurb": "1948 OG Swensen's \u2014 the very first one, still on a cable-car corner.",
+    "lat": 37.799075,
+    "lng": -122.419178
+  },
+  {
+    "name": "Humphry Slocombe (Mission)",
+    "address": "2790 Harrison St, San Francisco, CA 94110",
+    "blurb": "Secret Breakfast (bourbon + cornflakes) \u2014 the original location.",
+    "lat": 37.752805,
+    "lng": -122.412061
+  },
+  {
+    "name": "Humphry Slocombe (Ferry Building)",
+    "address": "1 Ferry Building, San Francisco, CA 94111",
+    "blurb": "Same wild flavors right on the Embarcadero.",
+    "lat": 37.795549,
+    "lng": -122.393475
+  },
+  {
+    "name": "The Ice Cream Bar Soda Fountain",
+    "address": "815 Cole St, San Francisco, CA 94117",
+    "blurb": "1930s-style soda-fountain in Cole Valley with sundaes and floats.",
+    "lat": 37.766447,
+    "lng": -122.450349
+  },
+  {
+    "name": "Polly Ann Ice Cream",
+    "address": "3142 Noriega St, San Francisco, CA 94122",
+    "blurb": "Sunset District legend \u2014 spin the wheel of mystery flavors.",
+    "lat": 37.753404,
+    "lng": -122.49732
+  },
+  {
+    "name": "Joe's Ice Cream",
+    "address": "5420 Geary Blvd, San Francisco, CA 94121",
+    "blurb": "Classic Outer Richmond shop \u2014 homemade flavors since 1959.",
+    "lat": 37.780816,
+    "lng": -122.477825
+  },
+  {
+    "name": "Marco Polo Italian Ice Cream",
+    "address": "1447 Taraval St, San Francisco, CA 94116",
+    "blurb": "Outer Sunset spot famous for durian, taro, and lychee gelato.",
+    "lat": 37.742575,
+    "lng": -122.481835
+  },
+  {
+    "name": "Lush Gelato (Pac Heights)",
+    "address": "1817 Polk St, San Francisco, CA 94109",
+    "blurb": "Local gelato with rotating seasonal flavors.",
+    "lat": 37.793574,
+    "lng": -122.421651
+  }
+]

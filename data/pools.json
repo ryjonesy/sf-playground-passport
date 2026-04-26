@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Balboa Pool",
+    "address": "747 Havelock St, San Francisco, CA 94112",
+    "url": "https://sfrecpark.org/486/Balboa-Pool",
+    "blurb": "Indoor pool in Balboa Park, popular for rec and lap swim.",
+    "lat": 37.726747,
+    "lng": -122.443267
+  },
+  {
+    "name": "Coffman Pool",
+    "address": "1701 Visitacion Ave, San Francisco, CA 94134",
+    "url": "https://sfrecpark.org/489/Coffman-Pool",
+    "blurb": "Indoor 25-yd pool in Herz Playground at McLaren Park.",
+    "lat": 37.712355,
+    "lng": -122.411162
+  },
+  {
+    "name": "Garfield Pool",
+    "address": "26th & Harrison St, San Francisco, CA 94110",
+    "url": "https://sfrecpark.org/494/Garfield-Pool",
+    "blurb": "Mission-District favorite with tot programs and family swim.",
+    "lat": 37.745799,
+    "lng": -122.411528
+  },
+  {
+    "name": "Hamilton Pool",
+    "address": "1900 Geary Blvd, San Francisco, CA 94115",
+    "url": "https://sfrecpark.org/497/Hamilton-Pool",
+    "blurb": "Heated pool with TWO indoor water slides \u2014 the only ones in SF.",
+    "lat": 37.784562,
+    "lng": -122.435324
+  },
+  {
+    "name": "Martin Luther King Jr. Pool",
+    "address": "5701 3rd St, San Francisco, CA 94124",
+    "url": "https://sfrecpark.org/495/Martin-Luther-King-Pool",
+    "blurb": "25-yd pool plus a separate tot wading pool in Bayview.",
+    "lat": 37.726191,
+    "lng": -122.394091
+  },
+  {
+    "name": "Mission Community Pool",
+    "address": "1 Linda St, San Francisco, CA 94110",
+    "url": "https://sfrecpark.org/496/Mission-Pool",
+    "blurb": "SF's only outdoor public pool \u2014 open seasonally.",
+    "lat": 37.759414,
+    "lng": -122.422818
+  },
+  {
+    "name": "North Beach Pool",
+    "address": "651 Lombard St, San Francisco, CA 94133",
+    "url": "https://sfrecpark.org/498/North-Beach-Pool",
+    "blurb": "Two pools (lap + recreation) in the Joe DiMaggio playground complex.",
+    "lat": 37.802849,
+    "lng": -122.412209
+  },
+  {
+    "name": "Rossi Pool",
+    "address": "Arguello Blvd & Anza St, San Francisco, CA 94118",
+    "url": "https://sfrecpark.org/499/Rossi-Pool",
+    "blurb": "Richmond District favorite with full programming for all ages.",
+    "lat": 37.7796,
+    "lng": -122.4585
+  },
+  {
+    "name": "Sava Pool",
+    "address": "2695 19th Ave, San Francisco, CA 94116",
+    "url": "https://sfrecpark.org/546/Sava-Pool",
+    "blurb": "Renovated 25-yd 8-lane pool in Parkside (currently undergoing repairs).",
+    "lat": 37.737632,
+    "lng": -122.475173
+  }
+]
