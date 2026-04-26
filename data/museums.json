@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Randall Museum",
+    "address": "199 Museum Way, San Francisco, CA 94114",
+    "url": "https://randallmuseum.org/",
+    "blurb": "Free hands-on natural-history & arts museum for kids in Corona Heights.",
+    "lat": 37.764398,
+    "lng": -122.438367
+  },
+  {
+    "name": "Exploratorium",
+    "address": "Pier 15, Embarcadero, San Francisco, CA 94111",
+    "url": "https://www.exploratorium.edu/",
+    "blurb": "Iconic hands-on science, art & human-perception museum on the waterfront.",
+    "lat": 37.801623,
+    "lng": -122.397367
+  },
+  {
+    "name": "California Academy of Sciences",
+    "address": "55 Music Concourse Dr, San Francisco, CA 94118",
+    "url": "https://www.calacademy.org/",
+    "blurb": "Aquarium, planetarium, rainforest & natural history museum in Golden Gate Park.",
+    "lat": 37.769827,
+    "lng": -122.466093
+  },
+  {
+    "name": "Children's Creativity Museum",
+    "address": "221 4th St, San Francisco, CA 94103",
+    "url": "https://creativity.org/",
+    "blurb": "Interactive arts & tech museum for ages 2-12 in Yerba Buena Gardens.",
+    "lat": 37.783101,
+    "lng": -122.402363
+  },
+  {
+    "name": "Walt Disney Family Museum",
+    "address": "104 Montgomery St, San Francisco, CA 94129",
+    "url": "https://www.waltdisney.org/",
+    "blurb": "Disney's life and art, in the Presidio's Main Post.",
+    "lat": 37.801363,
+    "lng": -122.458721
+  },
+  {
+    "name": "Aquarium of the Bay",
+    "address": "Pier 39, The Embarcadero, San Francisco, CA 94133",
+    "url": "https://www.aquariumofthebay.org/",
+    "blurb": "Local sea life, sharks & rays in glass tunnels at Pier 39.",
+    "lat": 37.808347,
+    "lng": -122.410427
+  },
+  {
+    "name": "de Young Museum",
+    "address": "50 Hagiwara Tea Garden Dr, San Francisco, CA 94118",
+    "url": "https://www.famsf.org/visit/de-young",
+    "blurb": "Fine art museum with a free observation tower and Kimball Education Gallery.",
+    "lat": 37.771498,
+    "lng": -122.469092
+  },
+  {
+    "name": "Legion of Honor",
+    "address": "100 34th Ave, San Francisco, CA 94121",
+    "url": "https://www.famsf.org/visit/legion-of-honor",
+    "blurb": "European art in Lincoln Park; family programs & a great cliff view.",
+    "lat": 37.784558,
+    "lng": -122.500955
+  },
+  {
+    "name": "Cable Car Museum",
+    "address": "1201 Mason St, San Francisco, CA 94108",
+    "url": "https://www.cablecarmuseum.org/",
+    "blurb": "Free working powerhouse where you can watch the cable cars' giant wheels spin.",
+    "lat": 37.79476,
+    "lng": -122.411853
+  },
+  {
+    "name": "Yerba Buena Center for the Arts",
+    "address": "701 Mission St, San Francisco, CA 94103",
+    "url": "https://ybca.org/",
+    "blurb": "Contemporary art & performance with regular family events.",
+    "lat": 37.785894,
+    "lng": -122.402327
+  },
+  {
+    "name": "Mus\u00e9e M\u00e9canique",
+    "address": "Pier 45, Shed A, San Francisco, CA 94133",
+    "url": "https://museemecanique.com/",
+    "blurb": "Free entry; hundreds of antique coin-operated arcade machines at Fisherman's Wharf.",
+    "lat": 37.809246,
+    "lng": -122.415794
+  },
+  {
+    "name": "San Francisco Zoo",
+    "address": "Sloat Blvd & Great Highway, San Francisco, CA 94132",
+    "url": "https://www.sfzoo.org/",
+    "blurb": "Not technically a museum, but a perennial family-day destination by Ocean Beach.",
+    "lat": 37.735433,
+    "lng": -122.507235
+  }
+]

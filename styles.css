@@ -205,6 +205,13 @@ dialog#detail::backdrop { background: rgba(15, 18, 25, 0.45); }
   vertical-align: middle; margin-right: 2px;
 }
 
+/* Museum dot legend swatch */
+.museum-dot {
+  display: inline-block; width: 10px; height: 10px; border-radius: 50%;
+  background: #8a6dbe; border: 2px solid #fff; box-shadow: 0 0 0 1px #8a6dbe;
+  vertical-align: middle; margin-right: 2px;
+}
+
 /* Cluster overrides — orange by default, green when every child is visited,
    two-tone (orange/green) when only some children are visited */
 .marker-cluster-small { background: rgba(227,88,44,0.25); }

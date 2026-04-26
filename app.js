@@ -27,6 +27,8 @@ const BADGES = [
 let playgrounds = [];
 let libraries = [];
 let librariesLayer = null;
+let museums = [];
+let museumsLayer = null;
 let progress = loadProgress();   // { id: { visited, rating, notes, date } }
 let map, cluster, markersById = {}, activeId = null;
 let trip = [];
@@ -38,14 +40,16 @@ let poiCache = JSON.parse(localStorage.getItem(POI_CACHE_KEY) || '{}');
 init();
 
 async function init() {
-  [playgrounds, libraries] = await Promise.all([
+  [playgrounds, libraries, museums] = await Promise.all([
     fetch('./data/playgrounds.json').then(r => r.json()),
     fetch('./data/libraries.json').then(r => r.json()).catch(() => []),
+    fetch('./data/museums.json').then(r => r.json()).catch(() => []),
   ]);
 
   initMap();
   initMarkers();
   initLibraries();
+  initMuseums();
   bindUI();
   renderList();
   updatePassport();
@@ -87,6 +91,30 @@ function initMap() {
 
   poiLayer = L.layerGroup().addTo(map);
   librariesLayer = L.layerGroup().addTo(map);
+  museumsLayer = L.layerGroup().addTo(map);
+}
+
+function initMuseums() {
+  museums.forEach(mu => {
+    const marker = L.circleMarker([mu.lat, mu.lng], {
+      radius: 7,
+      color: '#ffffff',
+      weight: 2,
+      fillColor: '#8a6dbe',
+      fillOpacity: 0.95,
+      className: 'museum-dot-marker',
+    });
+    const popup = `
+      <strong>🏛 ${escapeHtml(mu.name)}</strong><br>
+      <span style="color:#66707b;font-size:12px">${escapeHtml(mu.address)}</span><br>
+      <span style="font-size:12px">${escapeHtml(mu.blurb || '')}</span><br>
+      <a href="${mu.url}" target="_blank" rel="noopener">Visit website</a> ·
+      <a href="https://www.google.com/maps/dir/?api=1&destination=${mu.lat},${mu.lng}" target="_blank" rel="noopener">Directions</a>
+    `;
+    marker.bindPopup(popup);
+    marker.bindTooltip(`🏛 ${mu.name}`, { direction: 'top', offset: [0, -4] });
+    museumsLayer.addLayer(marker);
+  });
 }
 
 function initLibraries() {
@@ -197,6 +225,15 @@ function bindUI() {
   if (libToggle) libToggle.addEventListener('change', () => {
     if (libToggle.checked) map.addLayer(librariesLayer);
     else map.removeLayer(librariesLayer);
+  });
+
+  // Museums toggle
+  const muToggle = document.getElementById('fltMuseums');
+  const muCount = document.getElementById('muCount');
+  if (muCount) muCount.textContent = museums.length ? `(${museums.length})` : '';
+  if (muToggle) muToggle.addEventListener('change', () => {
+    if (muToggle.checked) map.addLayer(museumsLayer);
+    else map.removeLayer(museumsLayer);
   });
 
   const toggleBtn = document.getElementById('toggleSidebar');
