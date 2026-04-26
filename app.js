@@ -254,6 +254,13 @@ function bindUI() {
     if (!p) return;
     window.open(`https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.lng}`, '_blank');
   });
+  document.getElementById('dStreetView').addEventListener('click', () => {
+    const id = dlg.dataset.id; const p = playgrounds.find(x => x.id === id);
+    if (!p) return;
+    // Google Maps Street View URL — no API key needed, works on web + iOS/Android
+    // Format: ?api=1&map_action=pano&viewpoint=lat,lng
+    window.open(`https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=${p.lat},${p.lng}`, '_blank');
+  });
   document.getElementById('dTrip').addEventListener('click', () => {
     const id = dlg.dataset.id; if (!id) return;
     toggleTrip(id);
