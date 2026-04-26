@@ -137,6 +137,7 @@ button.mini:active { transform: translateY(1px); }
 .pg-marker .pin span { transform: rotate(45deg); font-size: 14px; line-height: 1; color: white; }
 .pg-marker.visited .pin { background: var(--visited); }
 .pg-marker.featured .pin { background: #f0a020; }
+.pg-marker.nps .pin { background: #2d5d3a; }   /* NPS / Presidio Trust forest green */
 .pg-marker.trip .pin { background: #5b6bff; }
 .pg-marker.active::after {
   content: ''; position: absolute; bottom: -4px; left: 50%; transform: translateX(-50%);

@@ -125,12 +125,14 @@ function makePinIcon(p) {
   const visited = !!progress[p.id]?.visited;
   const featured = !!p.note;
   const inTrip = trip.includes(p.id);
+  const isNps = p.operator && p.operator !== 'SF Rec & Park';
   const cls = ['pg-marker'];
   if (visited) cls.push('visited');
+  else if (isNps) cls.push('nps');
   else if (featured) cls.push('featured');
   if (inTrip) cls.push('trip');
   if (activeId === p.id) cls.push('active');
-  const emoji = visited ? '✓' : (featured ? '★' : '');
+  const emoji = visited ? '✓' : (isNps ? '🌲' : (featured ? '★' : ''));
   return L.divIcon({
     className: '', iconSize: [30, 38], iconAnchor: [15, 36], popupAnchor: [0, -32],
     html: `<div class="${cls.join(' ')}"><div class="pin"><span>${emoji}</span></div></div>`,
@@ -313,6 +315,7 @@ function renderList() {
         <div class="pg-name">${escapeHtml(p.name)}</div>
         <div class="pg-meta">
           ${p.address ? `<span>${escapeHtml(p.address)}</span>` : ''}
+          ${p.operator && p.operator !== 'SF Rec & Park' ? `<span class="dot">•</span><span>🌲 NPS</span>` : ''}
           ${p.accessibility?.length ? `<span class="dot">•</span><span>♿ ADA</span>` : ''}
           ${p.note ? `<span class="dot">•</span><span>★ Featured</span>` : ''}
           ${trip.includes(p.id) ? `<span class="dot">•</span><span>🚶 In trip</span>` : ''}
@@ -357,7 +360,8 @@ function openDetail(id) {
   const dlg = document.getElementById('detail');
   dlg.dataset.id = id;
   document.getElementById('dName').textContent = p.name;
-  document.getElementById('dAddr').textContent = [p.address, p.zipcode].filter(Boolean).join(' · ') || 'San Francisco, CA';
+  const operatorLine = p.operator && p.operator !== 'SF Rec & Park' ? ` · 🌲 ${p.operator}` : '';
+  document.getElementById('dAddr').textContent = ([p.address, p.zipcode].filter(Boolean).join(' · ') || 'San Francisco, CA') + operatorLine;
 
   const pp = getP(id);
   document.getElementById('dVisited').checked = pp.visited;

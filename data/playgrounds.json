@@ -8,7 +8,8 @@
     "lng": -122.46841197,
     "acres": 0.05024662603,
     "accessibility": [],
-    "id": "10th-ave-clement-mini-park"
+    "id": "10th-ave-clement-mini-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "24th & York Mini Park",
@@ -19,7 +20,8 @@
     "lng": -122.40860876,
     "acres": 0.01226209803,
     "accessibility": [],
-    "id": "24th-york-mini-park"
+    "id": "24th-york-mini-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Adam Rodgers Park",
@@ -30,7 +32,8 @@
     "lng": -122.38371190000001,
     "acres": 0.07472977617,
     "accessibility": [],
-    "id": "adam-rodgers-park"
+    "id": "adam-rodgers-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Alamo Square",
@@ -46,7 +49,8 @@
       "Accessible Rocker",
       "Accessible Swing"
     ],
-    "id": "alamo-square"
+    "id": "alamo-square",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Alice Chalmers Playground",
@@ -57,7 +61,8 @@
     "lng": -122.44682994,
     "acres": 0.09102770983,
     "accessibility": [],
-    "id": "alice-chalmers-playground"
+    "id": "alice-chalmers-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Alioto Mini Park",
@@ -68,7 +73,8 @@
     "lng": -122.41829005,
     "acres": 0.02593261547,
     "accessibility": [],
-    "id": "alioto-mini-park"
+    "id": "alioto-mini-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Alta Plaza Park",
@@ -86,7 +92,8 @@
       "Accessible Rocker",
       "Accessible Swing"
     ],
-    "id": "alta-plaza-park"
+    "id": "alta-plaza-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Angelo J. Rossi Playground",
@@ -103,7 +110,8 @@
       "Accessible Rocker",
       "Accessible Swing"
     ],
-    "id": "angelo-j-rossi-playground"
+    "id": "angelo-j-rossi-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Aptos Playground",
@@ -120,7 +128,8 @@
       "Accessible Rocker",
       "Accessible Swing"
     ],
-    "id": "aptos-playground"
+    "id": "aptos-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Argonne Playground",
@@ -136,7 +145,8 @@
       "Accessible Spinner",
       "Accessible Swing"
     ],
-    "id": "argonne-playground"
+    "id": "argonne-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Balboa Park",
@@ -154,7 +164,8 @@
       "Accessible Rocker",
       "Accessible Swing"
     ],
-    "id": "balboa-park"
+    "id": "balboa-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Bayview K.C. Jones Playground",
@@ -165,7 +176,8 @@
     "lng": -122.39347714,
     "acres": 0.07401249449,
     "accessibility": [],
-    "id": "bayview-k-c-jones-playground"
+    "id": "bayview-k-c-jones-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Bernal Heights Rec Center",
@@ -176,7 +188,8 @@
     "lng": -122.4161688,
     "acres": 0.09594564555,
     "accessibility": [],
-    "id": "bernal-heights-rec-center"
+    "id": "bernal-heights-rec-center",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Betty Ann Ong Chinese Rec Center",
@@ -187,7 +200,8 @@
     "lng": -122.41195394,
     "acres": 0.09865985239,
     "accessibility": [],
-    "id": "betty-ann-ong-chinese-rec-center"
+    "id": "betty-ann-ong-chinese-rec-center",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Brooks Park",
@@ -198,7 +212,8 @@
     "lng": -122.46629264,
     "acres": 0.05595733655,
     "accessibility": [],
-    "id": "brooks-park"
+    "id": "brooks-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Buchanan Street Mall",
@@ -209,7 +224,8 @@
     "lng": -122.42855185,
     "acres": 0.14396688797,
     "accessibility": [],
-    "id": "buchanan-street-mall"
+    "id": "buchanan-street-mall",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Buena Vista Park",
@@ -220,7 +236,8 @@
     "lng": -122.44210566,
     "acres": 0.09225425184,
     "accessibility": [],
-    "id": "buena-vista-park"
+    "id": "buena-vista-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Cabrillo Playground",
@@ -238,7 +255,8 @@
       "Accessible Rocker",
       "Accessible Swing"
     ],
-    "id": "cabrillo-playground"
+    "id": "cabrillo-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Carl Larsen Park",
@@ -254,7 +272,8 @@
       "Accessible Spinner",
       "Accessible Swing"
     ],
-    "id": "carl-larsen-park"
+    "id": "carl-larsen-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Cayuga Playground",
@@ -271,7 +290,8 @@
       "Accessible Spinner",
       "Accessible Swing"
     ],
-    "id": "cayuga-playground"
+    "id": "cayuga-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Coleridge Mini Park",
@@ -282,7 +302,8 @@
     "lng": -122.4194843,
     "acres": 0.01191517493,
     "accessibility": [],
-    "id": "coleridge-mini-park"
+    "id": "coleridge-mini-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Collis P. Huntington Park",
@@ -295,7 +316,8 @@
     "accessibility": [
       "Accessible Swing"
     ],
-    "id": "collis-p-huntington-park"
+    "id": "collis-p-huntington-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Cow Hollow Playground",
@@ -306,7 +328,8 @@
     "lng": -122.44489829,
     "acres": 0.06229822796,
     "accessibility": [],
-    "id": "cow-hollow-playground"
+    "id": "cow-hollow-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Crocker Amazon Playground",
@@ -322,7 +345,8 @@
       "Accessible Picnic Area",
       "Accessible Swing"
     ],
-    "id": "crocker-amazon-playground"
+    "id": "crocker-amazon-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Douglass Playground",
@@ -333,7 +357,8 @@
     "lng": -122.43850637,
     "acres": 0.13004701171,
     "accessibility": [],
-    "id": "douglass-playground"
+    "id": "douglass-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Duboce Park",
@@ -349,7 +374,8 @@
       "Accessible Spinner",
       "Accessible Swing"
     ],
-    "id": "duboce-park"
+    "id": "duboce-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Eugene Friend Rec Center",
@@ -360,7 +386,8 @@
     "lng": -122.4063768,
     "acres": 0.07551038476,
     "accessibility": [],
-    "id": "eugene-friend-rec-center"
+    "id": "eugene-friend-rec-center",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Eureka Valley Rec Center",
@@ -371,7 +398,8 @@
     "lng": -122.43623904,
     "acres": 0.08863412649,
     "accessibility": [],
-    "id": "eureka-valley-rec-center"
+    "id": "eureka-valley-rec-center",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Excelsior Playground",
@@ -382,7 +410,8 @@
     "lng": -122.43358647999999,
     "acres": 0.14861040748,
     "accessibility": [],
-    "id": "excelsior-playground"
+    "id": "excelsior-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Father Alfred E. Boeddeker Park",
@@ -393,7 +422,8 @@
     "lng": -122.41209591,
     "acres": 0.06533401699,
     "accessibility": [],
-    "id": "father-alfred-e-boeddeker-park"
+    "id": "father-alfred-e-boeddeker-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Francisco Park",
@@ -404,7 +434,8 @@
     "lng": -122.42034518,
     "acres": 0.15639515542,
     "accessibility": [],
-    "id": "francisco-park"
+    "id": "francisco-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Franklin Square",
@@ -415,7 +446,8 @@
     "lng": -122.40974615,
     "acres": 0.24476620891,
     "accessibility": [],
-    "id": "franklin-square"
+    "id": "franklin-square",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Fulton Playground",
@@ -432,7 +464,8 @@
       "Accessible Rocker",
       "Accessible Swing"
     ],
-    "id": "fulton-playground"
+    "id": "fulton-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Garfield Square",
@@ -450,7 +483,8 @@
       "Accessible Rocker",
       "Accessible Swing"
     ],
-    "id": "garfield-square"
+    "id": "garfield-square",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "George Christopher Playground",
@@ -461,7 +495,8 @@
     "lng": -122.4401778,
     "acres": 0.15646286915,
     "accessibility": [],
-    "id": "george-christopher-playground"
+    "id": "george-christopher-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Gilman Playground",
@@ -477,7 +512,8 @@
       "Accessible Spinner",
       "Accessible Swing"
     ],
-    "id": "gilman-playground"
+    "id": "gilman-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Glen Canyon Park",
@@ -495,7 +531,8 @@
       "Accessible Rocker",
       "Accessible Swing"
     ],
-    "id": "glen-canyon-park"
+    "id": "glen-canyon-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Golden Gate Heights Park",
@@ -506,7 +543,8 @@
     "lng": -122.46881499,
     "acres": 0.06865427043,
     "accessibility": [],
-    "id": "golden-gate-heights-park"
+    "id": "golden-gate-heights-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Golden Gate Park - Section 1",
@@ -517,7 +555,8 @@
     "lng": -122.44794108,
     "acres": 0.2770122337,
     "accessibility": [],
-    "id": "golden-gate-park-section-1"
+    "id": "golden-gate-park-section-1",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Golden Gate Park - Section 2",
@@ -528,7 +567,8 @@
     "lng": -122.4672512,
     "acres": 0.1857716685,
     "accessibility": [],
-    "id": "golden-gate-park-section-2"
+    "id": "golden-gate-park-section-2",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Golden Gate Park - Section 4",
@@ -539,7 +579,8 @@
     "lng": -122.47612304,
     "acres": 0.12010004477,
     "accessibility": [],
-    "id": "golden-gate-park-section-4"
+    "id": "golden-gate-park-section-4",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Golden Gate Park - Section 6",
@@ -550,7 +591,8 @@
     "lng": -122.50504344,
     "acres": 0.12369240152,
     "accessibility": [],
-    "id": "golden-gate-park-section-6"
+    "id": "golden-gate-park-section-6",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Golden Gate Park - Section 7",
@@ -561,7 +603,8 @@
     "lng": -122.45727942,
     "acres": 0.66941202755,
     "accessibility": [],
-    "id": "golden-gate-park-section-7"
+    "id": "golden-gate-park-section-7",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Grattan Playground",
@@ -572,7 +615,8 @@
     "lng": -122.45166714,
     "acres": 0.13975935216,
     "accessibility": [],
-    "id": "grattan-playground"
+    "id": "grattan-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Hamilton Rec Center",
@@ -590,7 +634,8 @@
       "Accessible Rocker",
       "Accessible Swing"
     ],
-    "id": "hamilton-rec-center"
+    "id": "hamilton-rec-center",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Hayes Valley Playground",
@@ -601,7 +646,8 @@
     "lng": -122.42760297,
     "acres": 0.06286111065,
     "accessibility": [],
-    "id": "hayes-valley-playground"
+    "id": "hayes-valley-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Head & Brotherood Mini Park",
@@ -612,7 +658,8 @@
     "lng": -122.46444548,
     "acres": 0.03018651171,
     "accessibility": [],
-    "id": "head-brotherood-mini-park"
+    "id": "head-brotherood-mini-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Helen Wills Playground",
@@ -629,7 +676,8 @@
       "Accessible Spinner",
       "Accessible Swing"
     ],
-    "id": "helen-wills-playground"
+    "id": "helen-wills-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Herz Playground",
@@ -640,7 +688,8 @@
     "lng": -122.41608599,
     "acres": 0.12608746556,
     "accessibility": [],
-    "id": "herz-playground"
+    "id": "herz-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Hilltop Park",
@@ -657,7 +706,8 @@
       "Accessible Rocker",
       "Accessible Swing"
     ],
-    "id": "hilltop-park"
+    "id": "hilltop-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Holly Park",
@@ -674,7 +724,8 @@
       "Accessible Rocker",
       "Accessible Swing"
     ],
-    "id": "holly-park"
+    "id": "holly-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "In Chan Kaajal Park",
@@ -685,7 +736,8 @@
     "lng": -122.41547515,
     "acres": 0.09670959091,
     "accessibility": [],
-    "id": "in-chan-kaajal-park"
+    "id": "in-chan-kaajal-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "India Basin - Shoreline Park",
@@ -696,7 +748,8 @@
     "lng": -122.37555151000001,
     "acres": 0.12807245868,
     "accessibility": [],
-    "id": "india-basin-shoreline-park"
+    "id": "india-basin-shoreline-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Ingleside Branch Library",
@@ -707,7 +760,8 @@
     "lng": -122.45610190000001,
     "acres": 0.00749427525,
     "accessibility": [],
-    "id": "ingleside-branch-library"
+    "id": "ingleside-branch-library",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "J.P. Murphy Playground",
@@ -724,7 +778,8 @@
       "Accessible Rocker",
       "Accessible Swing"
     ],
-    "id": "j-p-murphy-playground"
+    "id": "j-p-murphy-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Jackson Playground",
@@ -735,7 +790,8 @@
     "lng": -122.39933477,
     "acres": 0.17856459114,
     "accessibility": [],
-    "id": "jackson-playground"
+    "id": "jackson-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "James Rolph Jr. Playground",
@@ -750,7 +806,8 @@
       "Accessible Picnic Area",
       "Accessible Swing"
     ],
-    "id": "james-rolph-jr-playground"
+    "id": "james-rolph-jr-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Joe DiMaggio Playground",
@@ -768,7 +825,8 @@
       "Accessible Rocker",
       "Accessible Swing"
     ],
-    "id": "joe-dimaggio-playground"
+    "id": "joe-dimaggio-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "John McLaren Park",
@@ -779,7 +837,8 @@
     "lng": -122.4205113,
     "acres": 0.0614408331,
     "accessibility": [],
-    "id": "john-mclaren-park"
+    "id": "john-mclaren-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Jose Coronado Playground",
@@ -790,7 +849,8 @@
     "lng": -122.4148703,
     "acres": 0.05576645753,
     "accessibility": [],
-    "id": "jose-coronado-playground"
+    "id": "jose-coronado-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Joseph L. Alioto Performing Arts Piazza",
@@ -801,7 +861,8 @@
     "lng": -122.41724816,
     "acres": 0.28722782851,
     "accessibility": [],
-    "id": "joseph-l-alioto-performing-arts-piazza"
+    "id": "joseph-l-alioto-performing-arts-piazza",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Joseph Lee Rec Center",
@@ -812,7 +873,8 @@
     "lng": -122.38988226,
     "acres": 0.14638430946,
     "accessibility": [],
-    "id": "joseph-lee-rec-center"
+    "id": "joseph-lee-rec-center",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Junipero Serra Playground",
@@ -830,7 +892,8 @@
       "Accessible Rocker",
       "Accessible Swing"
     ],
-    "id": "junipero-serra-playground"
+    "id": "junipero-serra-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Juri Commons",
@@ -841,7 +904,8 @@
     "lng": -122.42210585,
     "acres": 0.02393116781,
     "accessibility": [],
-    "id": "juri-commons"
+    "id": "juri-commons",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Kelloch & Velasco Mini Park",
@@ -852,7 +916,8 @@
     "lng": -122.41358626,
     "acres": 0.14859299725,
     "accessibility": [],
-    "id": "kelloch-velasco-mini-park"
+    "id": "kelloch-velasco-mini-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Kid Power Park",
@@ -863,7 +928,8 @@
     "lng": -122.42030869,
     "acres": 0.12010439624,
     "accessibility": [],
-    "id": "kid-power-park"
+    "id": "kid-power-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Koshland Park",
@@ -874,7 +940,8 @@
     "lng": -122.42677832999999,
     "acres": 0.05571789509,
     "accessibility": [],
-    "id": "koshland-park"
+    "id": "koshland-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Lafayette Park",
@@ -891,7 +958,8 @@
       "Accessible Spinner",
       "Accessible Swing"
     ],
-    "id": "lafayette-park"
+    "id": "lafayette-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Laurel Hill Playground",
@@ -902,7 +970,8 @@
     "lng": -122.45111797999999,
     "acres": 0.060246236,
     "accessibility": [],
-    "id": "laurel-hill-playground"
+    "id": "laurel-hill-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Lessing & Sears Mini Park",
@@ -913,7 +982,8 @@
     "lng": -122.4553121,
     "acres": 0.0326711141,
     "accessibility": [],
-    "id": "lessing-sears-mini-park"
+    "id": "lessing-sears-mini-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Lincoln Park",
@@ -924,7 +994,8 @@
     "lng": -122.49356962,
     "acres": 0.50106159435,
     "accessibility": [],
-    "id": "lincoln-park"
+    "id": "lincoln-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Little Hollywood Park",
@@ -935,7 +1006,8 @@
     "lng": -122.39814039,
     "acres": 0.07786277273,
     "accessibility": [],
-    "id": "little-hollywood-park"
+    "id": "little-hollywood-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Louis Sutter Playground",
@@ -946,7 +1018,8 @@
     "lng": -122.41331348000001,
     "acres": 0.19776177135,
     "accessibility": [],
-    "id": "louis-sutter-playground"
+    "id": "louis-sutter-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Margaret S.Hayward Playground",
@@ -957,7 +1030,8 @@
     "lng": -122.42565219000001,
     "acres": 0.15761800987,
     "accessibility": [],
-    "id": "margaret-s-hayward-playground"
+    "id": "margaret-s-hayward-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Mariposa Park",
@@ -968,7 +1042,8 @@
     "lng": -122.39120738999999,
     "acres": 0.04837691276,
     "accessibility": [],
-    "id": "mariposa-park"
+    "id": "mariposa-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "McCoppin Square",
@@ -985,7 +1060,8 @@
       "Accessible Rocker",
       "Accessible Swing"
     ],
-    "id": "mccoppin-square"
+    "id": "mccoppin-square",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "McKinley Square",
@@ -996,7 +1072,8 @@
     "lng": -122.40451336,
     "acres": 0.12410454522,
     "accessibility": [],
-    "id": "mckinley-square"
+    "id": "mckinley-square",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Merced Heights Playground",
@@ -1007,7 +1084,8 @@
     "lng": -122.47005553,
     "acres": 0.0759946832,
     "accessibility": [],
-    "id": "merced-heights-playground"
+    "id": "merced-heights-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Michelangelo Playground",
@@ -1018,7 +1096,8 @@
     "lng": -122.41695398,
     "acres": 0.03637420478,
     "accessibility": [],
-    "id": "michelangelo-playground"
+    "id": "michelangelo-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Midtown Terrace Playground",
@@ -1034,7 +1113,8 @@
       "Accessible Spinner",
       "Accessible Swing"
     ],
-    "id": "midtown-terrace-playground"
+    "id": "midtown-terrace-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Minnie and Lovie Rec Center",
@@ -1051,7 +1131,8 @@
       "Accessible Rocker",
       "Accessible Swing"
     ],
-    "id": "minnie-and-lovie-rec-center"
+    "id": "minnie-and-lovie-rec-center",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Miraloma Playground",
@@ -1062,7 +1143,8 @@
     "lng": -122.44943753,
     "acres": 0.16563057645,
     "accessibility": [],
-    "id": "miraloma-playground"
+    "id": "miraloma-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Mission Bay Park",
@@ -1073,7 +1155,8 @@
     "lng": -122.39250736,
     "acres": 0.25050300758,
     "accessibility": [],
-    "id": "mission-bay-park"
+    "id": "mission-bay-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Mission Dolores Park",
@@ -1085,7 +1168,8 @@
     "acres": 0.45573052709,
     "accessibility": [],
     "note": "Family favorite per Kira Sparks blog",
-    "id": "mission-dolores-park"
+    "id": "mission-dolores-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Mission Playground",
@@ -1096,7 +1180,8 @@
     "lng": -122.42209518,
     "acres": 0.22327451882,
     "accessibility": [],
-    "id": "mission-playground"
+    "id": "mission-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Mission Rec Center",
@@ -1107,7 +1192,8 @@
     "lng": -122.4131572,
     "acres": 0.09676358333,
     "accessibility": [],
-    "id": "mission-rec-center"
+    "id": "mission-rec-center",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Moscone Rec Center",
@@ -1125,7 +1211,8 @@
       "Accessible Rocker",
       "Accessible Swing"
     ],
-    "id": "moscone-rec-center"
+    "id": "moscone-rec-center",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Mountain Lake Park",
@@ -1143,7 +1230,8 @@
       "Accessible Swing"
     ],
     "note": "Family favorite per Kira Sparks blog",
-    "id": "mountain-lake-park"
+    "id": "mountain-lake-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Noe Valley Courts",
@@ -1154,7 +1242,8 @@
     "lng": -122.43869421,
     "acres": 0.019168455,
     "accessibility": [],
-    "id": "noe-valley-courts"
+    "id": "noe-valley-courts",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Noe Valley Town Square",
@@ -1165,7 +1254,8 @@
     "lng": -122.42906988,
     "acres": 0.0132092259,
     "accessibility": [],
-    "id": "noe-valley-town-square"
+    "id": "noe-valley-town-square",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Palega Playground",
@@ -1183,7 +1273,8 @@
       "Accessible Rocker",
       "Accessible Swing"
     ],
-    "id": "palega-playground"
+    "id": "palega-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Palou & Phelps Park",
@@ -1194,7 +1285,8 @@
     "lng": -122.39522762,
     "acres": 0.07557428811,
     "accessibility": [],
-    "id": "palou-phelps-park"
+    "id": "palou-phelps-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Parkside Square",
@@ -1211,7 +1303,8 @@
       "Accessible Rocker",
       "Accessible Swing"
     ],
-    "id": "parkside-square"
+    "id": "parkside-square",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Parque Ninos Unidos",
@@ -1229,7 +1322,8 @@
       "Accessible Rocker",
       "Accessible Swing"
     ],
-    "id": "parque-ninos-unidos"
+    "id": "parque-ninos-unidos",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Patricia's Green in Hayes Valley",
@@ -1240,7 +1334,8 @@
     "lng": -122.42436681000001,
     "acres": 0.02073024242,
     "accessibility": [],
-    "id": "patricia-s-green-in-hayes-valley"
+    "id": "patricia-s-green-in-hayes-valley",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Peixotto Playground",
@@ -1251,7 +1346,8 @@
     "lng": -122.43748989,
     "acres": 0.12858983379,
     "accessibility": [],
-    "id": "peixotto-playground"
+    "id": "peixotto-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Portsmouth Square",
@@ -1262,7 +1358,8 @@
     "lng": -122.40525498,
     "acres": 0.13376658632,
     "accessibility": [],
-    "id": "portsmouth-square"
+    "id": "portsmouth-square",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Potrero Hill Rec Center",
@@ -1278,7 +1375,8 @@
       "Accessible Picnic Area",
       "Accessible Swing"
     ],
-    "id": "potrero-hill-rec-center"
+    "id": "potrero-hill-rec-center",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Potrero del Sol",
@@ -1289,7 +1387,8 @@
     "lng": -122.40469955,
     "acres": 0.11382053834,
     "accessibility": [],
-    "id": "potrero-del-sol"
+    "id": "potrero-del-sol",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Precita Park",
@@ -1300,7 +1399,8 @@
     "lng": -122.41099563,
     "acres": 0.11893091162,
     "accessibility": [],
-    "id": "precita-park"
+    "id": "precita-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Presidio Heights Playground",
@@ -1311,7 +1411,8 @@
     "lng": -122.4495857,
     "acres": 0.16082168159,
     "accessibility": [],
-    "id": "presidio-heights-playground"
+    "id": "presidio-heights-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Presidio Wall Playground",
@@ -1328,7 +1429,8 @@
       "Accessible Rocker",
       "Accessible Swing"
     ],
-    "id": "presidio-wall-playground"
+    "id": "presidio-wall-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Raymond Kimball Playground",
@@ -1343,7 +1445,8 @@
       "Accessible Picnic Area",
       "Accessible Swing"
     ],
-    "id": "raymond-kimball-playground"
+    "id": "raymond-kimball-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Richmond Playground",
@@ -1354,7 +1457,8 @@
     "lng": -122.47816827999999,
     "acres": 0.08331892746,
     "accessibility": [],
-    "id": "richmond-playground"
+    "id": "richmond-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Rochambeau Playground",
@@ -1365,7 +1469,8 @@
     "lng": -122.48425266,
     "acres": 0.16217117769,
     "accessibility": [],
-    "id": "rochambeau-playground"
+    "id": "rochambeau-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Rolph Nicol Playground",
@@ -1376,7 +1481,8 @@
     "lng": -122.47991694,
     "acres": 0.03253000666,
     "accessibility": [],
-    "id": "rolph-nicol-playground"
+    "id": "rolph-nicol-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Selby & Palou Mini Park",
@@ -1387,7 +1493,8 @@
     "lng": -122.40040974,
     "acres": 0.01628638499,
     "accessibility": [],
-    "id": "selby-palou-mini-park"
+    "id": "selby-palou-mini-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Seward Mini Park",
@@ -1398,7 +1505,8 @@
     "lng": -122.43980313,
     "acres": 0.02715205601,
     "accessibility": [],
-    "id": "seward-mini-park"
+    "id": "seward-mini-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Sgt. John Macaulay Park",
@@ -1409,7 +1517,8 @@
     "lng": -122.41822671,
     "acres": 0.09979417103,
     "accessibility": [],
-    "id": "sgt-john-macaulay-park"
+    "id": "sgt-john-macaulay-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Shipyard Parks",
@@ -1420,7 +1529,8 @@
     "lng": -122.36802894,
     "acres": 0.06662538062,
     "accessibility": [],
-    "id": "shipyard-parks"
+    "id": "shipyard-parks",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Shoreview Park",
@@ -1431,7 +1541,8 @@
     "lng": -122.38113863000001,
     "acres": 0.09565778237,
     "accessibility": [],
-    "id": "shoreview-park"
+    "id": "shoreview-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Sigmund Stern Recreation Grove",
@@ -1442,7 +1553,8 @@
     "lng": -122.47710719999999,
     "acres": 0.1476742523,
     "accessibility": [],
-    "id": "sigmund-stern-recreation-grove"
+    "id": "sigmund-stern-recreation-grove",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Silver Terrace Playground",
@@ -1453,7 +1565,8 @@
     "lng": -122.40219601,
     "acres": 0.13365096648,
     "accessibility": [],
-    "id": "silver-terrace-playground"
+    "id": "silver-terrace-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "South Park",
@@ -1464,7 +1577,8 @@
     "lng": -122.39427376,
     "acres": 0.07638737374,
     "accessibility": [],
-    "id": "south-park"
+    "id": "south-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "South Sunset Playground",
@@ -1480,7 +1594,8 @@
       "Accessible Rocker",
       "Accessible Swing"
     ],
-    "id": "south-sunset-playground"
+    "id": "south-sunset-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "St. Mary's Rec Center",
@@ -1498,7 +1613,8 @@
       "Accessible Rocker",
       "Accessible Swing"
     ],
-    "id": "st-mary-s-rec-center"
+    "id": "st-mary-s-rec-center",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "St. Mary's Square",
@@ -1516,7 +1632,8 @@
       "Accessible Rocker",
       "Accessible Swing"
     ],
-    "id": "st-mary-s-square"
+    "id": "st-mary-s-square",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "States Street Playground",
@@ -1527,7 +1644,8 @@
     "lng": -122.43865693999999,
     "acres": 0.1327244814,
     "accessibility": [],
-    "id": "states-street-playground"
+    "id": "states-street-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Sue Bierman Park",
@@ -1538,7 +1656,8 @@
     "lng": -122.39597628,
     "acres": 0.11800075781,
     "accessibility": [],
-    "id": "sue-bierman-park"
+    "id": "sue-bierman-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Sunnyside Playground",
@@ -1549,7 +1668,8 @@
     "lng": -122.44788796,
     "acres": 0.15319204063,
     "accessibility": [],
-    "id": "sunnyside-playground"
+    "id": "sunnyside-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Sunset Rec Center",
@@ -1566,7 +1686,8 @@
       "Accessible Rocker",
       "Accessible Swing"
     ],
-    "id": "sunset-rec-center"
+    "id": "sunset-rec-center",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Tenderloin Recreation Center",
@@ -1577,7 +1698,25 @@
     "lng": -122.41524149,
     "acres": 0.07457586226,
     "accessibility": [],
-    "id": "tenderloin-recreation-center"
+    "id": "tenderloin-recreation-center",
+    "operator": "SF Rec & Park"
+  },
+  {
+    "id": "outpost-presidio-tunnel-tops",
+    "name": "The Outpost at Presidio Tunnel Tops",
+    "facility": "Children's Play Area",
+    "address": "210 Lincoln Boulevard",
+    "zipcode": "94129",
+    "lat": 37.8023,
+    "lng": -122.4647,
+    "acres": 2.0,
+    "accessibility": [
+      "Accessible Parking",
+      "Accessible Restroom",
+      "Wheelchair-accessible primary pathways"
+    ],
+    "note": "Operated by the Presidio Trust (NPS) \u2014 the largest playground in SF, nature-inspired structures, ages 2-12, free, open 9:30am-6pm (Apr-Oct) / 9:30am-5pm (Nov-Mar)",
+    "operator": "Presidio Trust (NPS)"
   },
   {
     "name": "Turk & Hyde Mini Park",
@@ -1588,7 +1727,8 @@
     "lng": -122.41596779,
     "acres": 0.03176871235,
     "accessibility": [],
-    "id": "turk-hyde-mini-park"
+    "id": "turk-hyde-mini-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Upper Noe Rec Center",
@@ -1605,7 +1745,8 @@
       "Accessible Spinner",
       "Accessible Swing"
     ],
-    "id": "upper-noe-rec-center"
+    "id": "upper-noe-rec-center",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Victoria Manalo Draves Park",
@@ -1616,7 +1757,8 @@
     "lng": -122.40628935,
     "acres": 0.22995372039,
     "accessibility": [],
-    "id": "victoria-manalo-draves-park"
+    "id": "victoria-manalo-draves-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Walter Haas Playground",
@@ -1627,7 +1769,8 @@
     "lng": -122.43483941999999,
     "acres": 0.1802179977,
     "accessibility": [],
-    "id": "walter-haas-playground"
+    "id": "walter-haas-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Washington & Hyde Mini Park",
@@ -1638,7 +1781,8 @@
     "lng": -122.41742133,
     "acres": 0.11846966024,
     "accessibility": [],
-    "id": "washington-hyde-mini-park"
+    "id": "washington-hyde-mini-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Washington Square",
@@ -1652,7 +1796,8 @@
       "Accessible Restroom",
       "Accessible Swing"
     ],
-    "id": "washington-square"
+    "id": "washington-square",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "West Portal Playground",
@@ -1663,7 +1808,8 @@
     "lng": -122.46507593,
     "acres": 0.09079535147,
     "accessibility": [],
-    "id": "west-portal-playground"
+    "id": "west-portal-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "West Sunset Playground",
@@ -1681,7 +1827,8 @@
       "Accessible Rocker",
       "Accessible Swing"
     ],
-    "id": "west-sunset-playground"
+    "id": "west-sunset-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Willie Woo Woo Wong Playground",
@@ -1692,7 +1839,8 @@
     "lng": -122.40712905,
     "acres": 0.13438473737,
     "accessibility": [],
-    "id": "willie-woo-woo-wong-playground"
+    "id": "willie-woo-woo-wong-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Woh Hei Yuen Playground",
@@ -1703,7 +1851,8 @@
     "lng": -122.41054869999999,
     "acres": 0.06164342654,
     "accessibility": [],
-    "id": "woh-hei-yuen-playground"
+    "id": "woh-hei-yuen-playground",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Yik Oi Huang Peace & Friendship Park",
@@ -1714,7 +1863,8 @@
     "lng": -122.40901841,
     "acres": 0.1941067314,
     "accessibility": [],
-    "id": "yik-oi-huang-peace-friendship-park"
+    "id": "yik-oi-huang-peace-friendship-park",
+    "operator": "SF Rec & Park"
   },
   {
     "name": "Youngblood-Coleman Playground",
@@ -1725,6 +1875,7 @@
     "lng": -122.38416795,
     "acres": 0.17870915174,
     "accessibility": [],
-    "id": "youngblood-coleman-playground"
+    "id": "youngblood-coleman-playground",
+    "operator": "SF Rec & Park"
   }
 ]
