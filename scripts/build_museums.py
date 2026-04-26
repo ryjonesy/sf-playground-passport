@@ -2,8 +2,9 @@
 """Build SF kid-friendly museums dataset with geocoded coordinates."""
 import json, time, urllib.parse, urllib.request, sys, os
 
-# Curated list of SF museums that are kid/family-relevant.
-# Note: Bay Area Discovery Museum is in Sausalito → excluded (out of SF).
+# Curated list of kid/family-relevant museums in SF (plus Bay Area Discovery
+# Museum in Sausalito — included by user request because their family goes
+# there often; bounds check below allows Marin Headlands area).
 MUSEUMS = [
     {
         "name": "Randall Museum",
@@ -77,6 +78,12 @@ MUSEUMS = [
         "url": "https://www.sfzoo.org/",
         "blurb": "Not technically a museum, but a perennial family-day destination by Ocean Beach.",
     },
+    {
+        "name": "Bay Area Discovery Museum",
+        "address": "557 McReynolds Rd, Sausalito, CA 94965",
+        "url": "https://baykidsmuseum.org/",
+        "blurb": "Hands-on children's museum just across the Golden Gate Bridge in Sausalito.",
+    },
 ]
 
 UA = "sf-playground-passport/1.0 (ryjonesy.github.io)"
@@ -106,9 +113,9 @@ FALLBACK = {
     "Children's Creativity Museum": (37.7849, -122.4030),
 }
 
-# SF expanded bounds (incl. Treasure Island & Presidio)
+# Expanded bounds: SF + Marin Headlands / Sausalito (for Bay Area Discovery)
 def in_sf(lat, lng):
-    return 37.6 < lat < 37.85 and -122.55 < lng < -122.35
+    return 37.6 < lat < 37.86 and -122.55 < lng < -122.35
 
 
 def main():

@@ -94,5 +94,13 @@
     "blurb": "Not technically a museum, but a perennial family-day destination by Ocean Beach.",
     "lat": 37.735433,
     "lng": -122.507235
+  },
+  {
+    "name": "Bay Area Discovery Museum",
+    "address": "557 McReynolds Rd, Sausalito, CA 94965",
+    "url": "https://baykidsmuseum.org/",
+    "blurb": "Hands-on children's museum just across the Golden Gate Bridge in Sausalito.",
+    "lat": 37.835709,
+    "lng": -122.477056
   }
 ]
