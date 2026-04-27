@@ -2,7 +2,7 @@
 
 An interactive map of every San Francisco Recreation & Park playground — track which ones your family has visited, find nearby kid-friendly spots, plan multi-stop trips, and earn badges for hitting milestones.
 
-[👉 Live demo](#) — replace this link with your GitHub Pages URL once deployed.
+[👉 Live demo](https://ryjonesy.github.io/sf-playground-passport/) · [📖 User guide](./USER_GUIDE.md)
 
 ![SF Playground Passport screenshot](https://img.shields.io/badge/playgrounds-134-orange) ![License](https://img.shields.io/badge/license-MIT-blue) ![Stack](https://img.shields.io/badge/stack-vanilla%20JS%20%2B%20Leaflet-green)
 
