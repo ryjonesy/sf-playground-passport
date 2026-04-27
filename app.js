@@ -37,6 +37,10 @@ let beaches = [];
 let beachesLayer = null;
 let iceCream = [];
 let iceCreamLayer = null;
+let microclimates = [];
+let weatherLayer = null;
+let weatherCache = JSON.parse(localStorage.getItem('sf-weather-cache-v1') || 'null'); // { fetchedAt, byId: {id: {...}} }
+let weatherTimer = null;
 let progress = loadProgress();   // { id: { visited, rating, notes, date } }
 let map, cluster, markersById = {}, activeId = null;
 let trip = [];
@@ -48,7 +52,7 @@ let poiCache = JSON.parse(localStorage.getItem(POI_CACHE_KEY) || '{}');
 init();
 
 async function init() {
-  [playgrounds, libraries, museums, restrooms, pools, beaches, iceCream] = await Promise.all([
+  [playgrounds, libraries, museums, restrooms, pools, beaches, iceCream, microclimates] = await Promise.all([
     fetch('./data/playgrounds.json').then(r => r.json()),
     fetch('./data/libraries.json').then(r => r.json()).catch(() => []),
     fetch('./data/museums.json').then(r => r.json()).catch(() => []),
@@ -56,6 +60,7 @@ async function init() {
     fetch('./data/pools.json').then(r => r.json()).catch(() => []),
     fetch('./data/beaches.json').then(r => r.json()).catch(() => []),
     fetch('./data/ice_cream.json').then(r => r.json()).catch(() => []),
+    fetch('./data/microclimates.json').then(r => r.json()).catch(() => []),
   ]);
 
   initMap();
@@ -186,6 +191,133 @@ function initSimpleOverlays() {
     `,
     tooltip: ic => `🍦 ${ic.name}`,
   });
+}
+
+// ---------- Weather (microclimate chips) ----------
+// WMO weather code → emoji + short label
+// https://open-meteo.com/en/docs (search "WMO Weather interpretation codes")
+const WMO = {
+  0:  { e: '☀️', t: 'Clear' },
+  1:  { e: '🌤', t: 'Mostly clear' },
+  2:  { e: '⛅', t: 'Partly cloudy' },
+  3:  { e: '☁️', t: 'Overcast' },
+  45: { e: '🌫', t: 'Fog' },
+  48: { e: '🌫', t: 'Freezing fog' },
+  51: { e: '🌦', t: 'Light drizzle' },
+  53: { e: '🌦', t: 'Drizzle' },
+  55: { e: '🌧', t: 'Heavy drizzle' },
+  61: { e: '🌧', t: 'Light rain' },
+  63: { e: '🌧', t: 'Rain' },
+  65: { e: '🌧', t: 'Heavy rain' },
+  71: { e: '🌨', t: 'Light snow' },
+  73: { e: '🌨', t: 'Snow' },
+  75: { e: '❄️', t: 'Heavy snow' },
+  80: { e: '🌦', t: 'Showers' },
+  81: { e: '🌧', t: 'Showers' },
+  82: { e: '⛈', t: 'Heavy showers' },
+  95: { e: '⛈', t: 'Thunderstorm' },
+  96: { e: '⛈', t: 'Thunderstorm w/ hail' },
+  99: { e: '⛈', t: 'Severe thunderstorm' },
+};
+function wmoInfo(code) { return WMO[code] || { e: '·', t: 'Unknown' }; }
+
+async function fetchMicroclimateWeather() {
+  // Open-Meteo accepts comma-separated lat/lng for a single multi-location request.
+  if (!microclimates.length) return null;
+  const lats = microclimates.map(z => z.lat).join(',');
+  const lngs = microclimates.map(z => z.lng).join(',');
+  const url = `https://api.open-meteo.com/v1/forecast?latitude=${lats}&longitude=${lngs}` +
+              '&current=temperature_2m,weather_code,wind_speed_10m,relative_humidity_2m' +
+              '&temperature_unit=fahrenheit&wind_speed_unit=mph&timezone=America/Los_Angeles';
+  const res = await fetch(url);
+  if (!res.ok) throw new Error('weather fetch failed: ' + res.status);
+  const data = await res.json();
+  // When you pass multiple coords, Open-Meteo returns an array of forecast objects.
+  const arr = Array.isArray(data) ? data : [data];
+  const byId = {};
+  microclimates.forEach((zone, i) => {
+    const cur = arr[i] && arr[i].current;
+    if (!cur) return;
+    byId[zone.id] = {
+      temp: Math.round(cur.temperature_2m),
+      code: cur.weather_code,
+      wind: Math.round(cur.wind_speed_10m),
+      humidity: Math.round(cur.relative_humidity_2m),
+      time: cur.time,
+    };
+  });
+  return { fetchedAt: Date.now(), byId };
+}
+
+function renderWeatherChips() {
+  if (!weatherLayer) weatherLayer = L.layerGroup();
+  weatherLayer.clearLayers();
+  if (!weatherCache || !weatherCache.byId) return;
+  microclimates.forEach(zone => {
+    const w = weatherCache.byId[zone.id];
+    if (!w) return;
+    const info = wmoInfo(w.code);
+    const html = `
+      <div class="wx-chip" data-temp="${tempBucket(w.temp)}" title="${escapeHtml(zone.name)} — ${info.t}, ${w.temp}°F, ${w.wind} mph wind, ${w.humidity}% humidity">
+        <span class="wx-emoji">${info.e}</span><span class="wx-temp">${w.temp}°</span>
+        <span class="wx-name">${escapeHtml(zone.name)}</span>
+      </div>`;
+    const icon = L.divIcon({ className: 'wx-icon', html, iconSize: null, iconAnchor: [0, 0] });
+    const marker = L.marker([zone.lat, zone.lng], { icon, interactive: true, keyboard: false });
+    marker.bindPopup(`
+      <strong>${escapeHtml(zone.name)}</strong><br>
+      <span style="font-size:14px">${info.e} ${info.t} · <strong>${w.temp}°F</strong></span><br>
+      <span style="color:#66707b;font-size:12px">Wind ${w.wind} mph · Humidity ${w.humidity}%</span><br>
+      <span style="color:#66707b;font-size:11px">Updated ${formatRelativeTime(weatherCache.fetchedAt)}</span><br>
+      <span style="color:#aaa;font-size:11px">Source: <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a></span>
+    `);
+    weatherLayer.addLayer(marker);
+  });
+}
+
+function tempBucket(t) {
+  if (t == null) return 'mid';
+  if (t < 55) return 'cool';
+  if (t < 65) return 'mild';
+  if (t < 75) return 'warm';
+  return 'hot';
+}
+
+function formatRelativeTime(ts) {
+  if (!ts) return 'just now';
+  const min = Math.round((Date.now() - ts) / 60000);
+  if (min < 1) return 'just now';
+  if (min === 1) return '1 min ago';
+  if (min < 60) return `${min} min ago`;
+  const hr = Math.round(min / 60);
+  return `${hr} hr ago`;
+}
+
+async function refreshWeather(force = false) {
+  // Use cache if it's < 15 min old and not forced.
+  const fresh = weatherCache && (Date.now() - weatherCache.fetchedAt) < 15 * 60 * 1000;
+  if (!fresh || force) {
+    try {
+      const data = await fetchMicroclimateWeather();
+      if (data) {
+        weatherCache = data;
+        localStorage.setItem('sf-weather-cache-v1', JSON.stringify(weatherCache));
+      }
+    } catch (err) {
+      console.warn('Weather fetch failed, using cached data if any:', err);
+    }
+  }
+  renderWeatherChips();
+}
+
+function startWeatherUpdates() {
+  refreshWeather();
+  if (weatherTimer) clearInterval(weatherTimer);
+  // Refresh every 15 minutes while the toggle is on.
+  weatherTimer = setInterval(() => refreshWeather(true), 15 * 60 * 1000);
+}
+function stopWeatherUpdates() {
+  if (weatherTimer) { clearInterval(weatherTimer); weatherTimer = null; }
 }
 
 function initMuseums() {
@@ -351,6 +483,23 @@ function bindUI() {
       else map.removeLayer(layer);
     });
   });
+
+  // Weather (microclimate chips). Live data, default off.
+  const wxToggle = document.getElementById('fltWeather');
+  const wxCount = document.getElementById('wxCount');
+  if (wxCount) wxCount.textContent = microclimates.length ? `(${microclimates.length} zones)` : '';
+  if (wxToggle) {
+    wxToggle.addEventListener('change', async () => {
+      if (wxToggle.checked) {
+        await refreshWeather();              // populates weatherCache + builds weatherLayer
+        if (weatherLayer) map.addLayer(weatherLayer);
+        startWeatherUpdates();
+      } else {
+        if (weatherLayer) map.removeLayer(weatherLayer);
+        stopWeatherUpdates();
+      }
+    });
+  }
 
   const toggleBtn = document.getElementById('toggleSidebar');
   const toggleIcon = document.getElementById('toggleIcon');

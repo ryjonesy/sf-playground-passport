@@ -54,6 +54,7 @@ Pin colors at a glance:
 | 🔷 Deep-blue dot | Community pool |
 | 🟡 Sandy yellow dot | Beach |
 | 🌸 Pink dot | Ice cream shop |
+| ☀️ / 🌤 / 🌫 chip | Live weather at a microclimate zone |
 
 ---
 
@@ -96,12 +97,24 @@ Six toggle layers help with planning a day out. Each is a checkbox in the sideba
 | **Pools** | OFF | 9 SF Rec & Park community pools |
 | **Beaches** | OFF | 8 family-friendly beaches (Crissy, Baker, Ocean, China, Aquatic Park, Heron's Head, Marshall's, Pier 7) |
 | **Ice cream** | OFF | 15 hand-picked SF ice cream shops (Mitchell's, Bi-Rite, Smitten, Salt & Straw, Humphry Slocombe…) |
+| **Live weather** | OFF | Current temp + conditions at 10 SF microclimate zones (Outer Sunset, Richmond, Presidio, Marina, Downtown, Mission, Bernal, Glen Park, Bayview, Twin Peaks). Refreshes every 15 min. |
 
 **Tips**
 
 - Restrooms and ice cream are off by default to keep the map readable — flip them on when you're planning a specific outing.
 - Click any discovery dot for an info popup with name, address, and (where available) website link and one-line blurb.
 - Layers are independent — you can stack any combination.
+
+### About the live weather layer
+
+SF microclimates are real — the Outer Sunset can sit at 55°F under fog while the Mission is sunny and 75°F. The weather layer makes that visible at a glance.
+
+- Data comes from [Open-Meteo](https://open-meteo.com/) (free, no API key, no signup) — a single multi-coordinate request to `api.open-meteo.com/v1/forecast`.
+- 10 zones are sampled with one network call: Outer Sunset, Richmond, Presidio, Marina, Downtown, Mission, Bernal, Glen Park, Bayview, Twin Peaks.
+- Each chip shows weather emoji + rounded temperature °F + zone name. Click for wind, humidity, and last-updated time.
+- Chips are color-tinted by temperature: blue (<55°F), green (55-65°F), amber (65-75°F), red (75°F+).
+- Results are cached in `localStorage` (`sf-weather-cache-v1`) for instant reload, and auto-refresh every 15 minutes while the toggle is on.
+- Zones are defined in [`data/microclimates.json`](#microclimatesjson) — same shape as the other simple datasets, edit to add/move zones.
 
 ---
 
@@ -158,6 +171,7 @@ All data lives in `/data/*.json` and is loaded once on page load via `fetch()`. 
 | `data/pools.json` | 9 | SF Rec & Park community pools |
 | `data/beaches.json` | 8 | Family-friendly beaches |
 | `data/ice_cream.json` | 15 | Curated ice cream shops |
+| `data/microclimates.json` | 10 | Sample points for the live weather overlay |
 
 ### Coordinate convention
 
@@ -294,6 +308,27 @@ All data lives in `/data/*.json` and is loaded once on page load via `fetch()`. 
 ```
 
 > Source: hand-curated from local food press; geocoded via [Nominatim](https://nominatim.org/).
+
+#### `microclimates.json`
+
+```json
+{
+  "id": "outer-sunset",
+  "name": "Outer Sunset",
+  "lat": 37.7596,
+  "lng": -122.4938
+}
+```
+
+| Field | Required | Notes |
+|---|---|---|
+| `id` | ✅ | Stable slug; used as the cache key for that zone's weather |
+| `name` | ✅ | Shown on the map chip and popup |
+| `lat`, `lng` | ✅ | Sampled location — pick the rough center of the neighborhood |
+
+Unlike the other JSON files, this one is **just sample points** — the live values come from the Open-Meteo API at runtime. To add a new microclimate zone (say, "Lake Merced"), append an object with a fresh `id` and the lat/lng of where you want the sample taken. No code changes needed.
+
+> Source: zones picked by hand to represent SF's distinct climate bands. Live weather data: [Open-Meteo Forecast API](https://open-meteo.com/en/docs).
 
 ---
 

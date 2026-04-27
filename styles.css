@@ -213,7 +213,7 @@ dialog#detail::backdrop { background: rgba(15, 18, 25, 0.45); }
 }
 
 /* Additional overlay legend swatches (restrooms, pools, beaches, ice cream) */
-.restroom-dot, .pool-dot, .beach-dot, .icecream-dot {
+.restroom-dot, .pool-dot, .beach-dot, .icecream-dot, .weather-dot {
   display: inline-block; width: 10px; height: 10px; border-radius: 50%;
   border: 2px solid #fff;
   vertical-align: middle; margin-right: 2px;
@@ -222,6 +222,46 @@ dialog#detail::backdrop { background: rgba(15, 18, 25, 0.45); }
 .pool-dot     { background: #0f6dcf; box-shadow: 0 0 0 1px #0f6dcf; }
 .beach-dot    { background: #d9a441; box-shadow: 0 0 0 1px #d9a441; }
 .icecream-dot { background: #ec7ad6; box-shadow: 0 0 0 1px #ec7ad6; }
+.weather-dot  {
+  background: linear-gradient(135deg, #4aa3df 0%, #f5b556 100%);
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.08);
+}
+
+/* Microclimate weather chips on the map. Built with L.divIcon. */
+.wx-icon { background: transparent !important; border: 0 !important; }
+.wx-chip {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 3px 8px 3px 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18), 0 0 0 1px rgba(0, 0, 0, 0.06);
+  font: 600 12px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  white-space: nowrap;
+  transform: translate(-50%, -50%);   /* center on coordinate */
+  cursor: pointer;
+  transition: transform 0.12s ease;
+}
+.wx-chip:hover { transform: translate(-50%, -50%) scale(1.05); }
+.wx-chip .wx-emoji { font-size: 14px; line-height: 1; }
+.wx-chip .wx-temp  { font-weight: 700; color: #1a2330; }
+.wx-chip .wx-name  {
+  font-size: 10px; font-weight: 500; color: #66707b;
+  border-left: 1px solid rgba(0,0,0,0.08);
+  padding-left: 5px; margin-left: 2px;
+}
+/* Color-tint by temperature bucket */
+.wx-chip[data-temp="cool"] { background: rgba(220, 235, 248, 0.97); }
+.wx-chip[data-temp="cool"] .wx-temp { color: #1762a3; }
+.wx-chip[data-temp="mild"] { background: rgba(232, 244, 235, 0.97); }
+.wx-chip[data-temp="mild"] .wx-temp { color: #2d6e3a; }
+.wx-chip[data-temp="warm"] { background: rgba(253, 240, 220, 0.97); }
+.wx-chip[data-temp="warm"] .wx-temp { color: #b06a17; }
+.wx-chip[data-temp="hot"]  { background: rgba(252, 226, 220, 0.97); }
+.wx-chip[data-temp="hot"]  .wx-temp { color: #b13a26; }
+@media (max-width: 600px) {
+  .wx-chip .wx-name { display: none; }   /* tighter on phones */
+  .wx-chip { padding: 3px 7px; }
+}
 
 /* Cluster overrides — orange by default, green when every child is visited,
    two-tone (orange/green) when only some children are visited */

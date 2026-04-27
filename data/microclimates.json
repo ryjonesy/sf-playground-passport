@@ -1,0 +1,12 @@
+[
+  { "id": "outer-sunset",  "name": "Outer Sunset",  "lat": 37.7596, "lng": -122.4938 },
+  { "id": "richmond",      "name": "Richmond",      "lat": 37.7799, "lng": -122.4807 },
+  { "id": "presidio",      "name": "Presidio",      "lat": 37.7989, "lng": -122.4662 },
+  { "id": "marina",        "name": "Marina",        "lat": 37.8030, "lng": -122.4378 },
+  { "id": "downtown",      "name": "Downtown",      "lat": 37.7898, "lng": -122.4011 },
+  { "id": "mission",       "name": "Mission",       "lat": 37.7599, "lng": -122.4148 },
+  { "id": "bernal",        "name": "Bernal Heights","lat": 37.7395, "lng": -122.4156 },
+  { "id": "glen-park",     "name": "Glen Park",     "lat": 37.7335, "lng": -122.4337 },
+  { "id": "bayview",       "name": "Bayview",       "lat": 37.7311, "lng": -122.3895 },
+  { "id": "twin-peaks",    "name": "Twin Peaks",    "lat": 37.7544, "lng": -122.4477 }
+]
