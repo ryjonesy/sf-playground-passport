@@ -227,40 +227,146 @@ dialog#detail::backdrop { background: rgba(15, 18, 25, 0.45); }
   box-shadow: 0 0 0 1px rgba(0,0,0,0.08);
 }
 
-/* Microclimate weather chips on the map. Built with L.divIcon. */
+/* ---------- Microclimate weather: map chips ---------- */
+/* Compact emoji + temp pill. The full zone name lives in the side panel. */
 .wx-icon { background: transparent !important; border: 0 !important; }
 .wx-chip {
-  display: inline-flex; align-items: center; gap: 4px;
-  padding: 3px 8px 3px 6px;
+  display: inline-flex; align-items: center; gap: 3px;
+  padding: 2px 7px 2px 5px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.96);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18), 0 0 0 1px rgba(0, 0, 0, 0.06);
-  font: 600 12px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.05);
+  font: 600 11px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   white-space: nowrap;
   transform: translate(-50%, -50%);   /* center on coordinate */
-  cursor: pointer;
-  transition: transform 0.12s ease;
+  cursor: default;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+  pointer-events: auto;
 }
-.wx-chip:hover { transform: translate(-50%, -50%) scale(1.05); }
-.wx-chip .wx-emoji { font-size: 14px; line-height: 1; }
+.wx-chip:hover {
+  transform: translate(-50%, -50%) scale(1.12);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.22), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  z-index: 600;
+}
+.wx-chip .wx-emoji { font-size: 12px; line-height: 1; }
 .wx-chip .wx-temp  { font-weight: 700; color: #1a2330; }
-.wx-chip .wx-name  {
-  font-size: 10px; font-weight: 500; color: #66707b;
-  border-left: 1px solid rgba(0,0,0,0.08);
-  padding-left: 5px; margin-left: 2px;
-}
 /* Color-tint by temperature bucket */
-.wx-chip[data-temp="cool"] { background: rgba(220, 235, 248, 0.97); }
+.wx-chip[data-temp="cool"] { background: rgba(217, 234, 250, 0.94); }
 .wx-chip[data-temp="cool"] .wx-temp { color: #1762a3; }
-.wx-chip[data-temp="mild"] { background: rgba(232, 244, 235, 0.97); }
+.wx-chip[data-temp="mild"] { background: rgba(229, 244, 232, 0.94); }
 .wx-chip[data-temp="mild"] .wx-temp { color: #2d6e3a; }
-.wx-chip[data-temp="warm"] { background: rgba(253, 240, 220, 0.97); }
+.wx-chip[data-temp="warm"] { background: rgba(253, 238, 215, 0.94); }
 .wx-chip[data-temp="warm"] .wx-temp { color: #b06a17; }
-.wx-chip[data-temp="hot"]  { background: rgba(252, 226, 220, 0.97); }
+.wx-chip[data-temp="hot"]  { background: rgba(252, 222, 215, 0.94); }
 .wx-chip[data-temp="hot"]  .wx-temp { color: #b13a26; }
-@media (max-width: 600px) {
-  .wx-chip .wx-name { display: none; }   /* tighter on phones */
-  .wx-chip { padding: 3px 7px; }
+@media (max-width: 720px) {
+  /* On phones: emoji-only, even smaller. Temp lives in the bottom sheet. */
+  .wx-chip { padding: 2px 4px; gap: 0; }
+  .wx-chip .wx-temp { display: none; }
+  .wx-chip .wx-emoji { font-size: 13px; }
+}
+
+/* ---------- Microclimate weather: side panel / bottom sheet ---------- */
+#weatherPanel {
+  position: absolute;
+  top: 16px; right: 16px;
+  width: 264px;
+  max-height: calc(100% - 32px);
+  display: flex; flex-direction: column;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18), 0 0 0 1px rgba(0, 0, 0, 0.05);
+  font: 13px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  z-index: 500;   /* above Leaflet markers (z 400-450), below popups (700+) */
+  overflow: hidden;
+}
+.wxp-header {
+  display: flex; align-items: center; gap: 8px;
+  padding: 10px 12px;
+  border-bottom: 1px solid #eef0f3;
+  cursor: default;
+}
+.wxp-grip { display: none; } /* visible only on mobile */
+.wxp-title { flex: 1; min-width: 0; }
+.wxp-title strong { display: block; font-size: 13px; color: #1a2330; }
+.wxp-updated { display: block; font-size: 11px; color: #8b94a3; margin-top: 2px; }
+.wxp-close {
+  background: transparent; border: 0; padding: 0; width: 28px; height: 28px;
+  font-size: 22px; line-height: 1; color: #66707b; cursor: pointer;
+  border-radius: 6px;
+}
+.wxp-close:hover { background: #f1f3f6; color: #1a2330; }
+.wxp-list {
+  overflow-y: auto;
+  flex: 1;
+  padding: 4px 0;
+}
+.wxp-row {
+  display: grid;
+  grid-template-columns: 22px 1fr auto;
+  grid-template-rows: auto auto;
+  align-items: center;
+  gap: 0 8px;
+  width: 100%;
+  padding: 8px 12px;
+  background: transparent; border: 0; border-bottom: 1px solid #f4f5f7;
+  text-align: left; cursor: pointer;
+  font: inherit; color: inherit;
+}
+.wxp-row:last-child { border-bottom: 0; }
+.wxp-row:hover, .wxp-row:focus-visible {
+  background: #f7f9fc; outline: 0;
+}
+.wxp-emoji { grid-column: 1; grid-row: 1 / 3; font-size: 18px; line-height: 1; }
+.wxp-name  { grid-column: 2; grid-row: 1; font-weight: 600; color: #1a2330; }
+.wxp-cond  { grid-column: 2; grid-row: 2; font-size: 11px; color: #66707b; }
+.wxp-temp  { grid-column: 3; grid-row: 1 / 3; font-size: 18px; font-weight: 700; }
+/* Color-tint by temperature bucket (matches the map chips) */
+.wxp-row[data-temp="cool"] .wxp-temp { color: #1762a3; }
+.wxp-row[data-temp="mild"] .wxp-temp { color: #2d6e3a; }
+.wxp-row[data-temp="warm"] .wxp-temp { color: #b06a17; }
+.wxp-row[data-temp="hot"]  .wxp-temp { color: #b13a26; }
+.wxp-foot {
+  padding: 8px 12px;
+  border-top: 1px solid #eef0f3;
+  font-size: 11px;
+  color: #8b94a3;
+  text-align: center;
+}
+.wxp-foot a { color: inherit; text-decoration: underline; }
+.wxp-empty { padding: 16px; text-align: center; color: #8b94a3; }
+
+/* Mobile bottom sheet: same element, different position. */
+@media (max-width: 720px) {
+  #weatherPanel {
+    top: auto; right: 0; bottom: 0; left: 0;
+    width: auto;
+    max-height: 70vh;
+    border-radius: 14px 14px 0 0;
+    /* Above the sidebar (z-index 1100) so it's always reachable. */
+    z-index: 1200;
+    /* Collapsed by default — only the header peeks up. */
+    transform: translateY(calc(100% - 56px));
+    transition: transform 0.25s ease;
+  }
+  body.wx-sheet-open #weatherPanel { transform: translateY(0); }
+  .wxp-header { cursor: pointer; padding: 8px 14px 12px; flex-direction: column; align-items: stretch; gap: 4px; }
+  .wxp-grip {
+    display: block;
+    width: 36px; height: 4px; border-radius: 2px;
+    background: #d6dae0;
+    margin: 2px auto 6px;
+  }
+  .wxp-title { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+  .wxp-title strong { font-size: 14px; }
+  .wxp-updated { margin-top: 0; }
+  .wxp-close { position: absolute; top: 12px; right: 8px; }
+  /* Hide list/footer when collapsed so they don't block taps on the map. */
+  .wxp-list, .wxp-foot { display: none; }
+  body.wx-sheet-open .wxp-list,
+  body.wx-sheet-open .wxp-foot { display: block; }
 }
 
 /* Cluster overrides — orange by default, green when every child is visited,

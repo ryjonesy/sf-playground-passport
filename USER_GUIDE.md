@@ -107,13 +107,19 @@ Six toggle layers help with planning a day out. Each is a checkbox in the sideba
 
 ### About the live weather layer
 
-SF microclimates are real — the Outer Sunset can sit at 55°F under fog while the Mission is sunny and 75°F. The weather layer makes that visible at a glance.
+SF microclimates are real — the Outer Sunset can sit at 55°F under fog while the Mission is sunny and 75°F. The weather layer makes that visible at a glance, with two complementary views:
 
-- Data comes from [Open-Meteo](https://open-meteo.com/) (free, no API key, no signup) — a single multi-coordinate request to `api.open-meteo.com/v1/forecast`.
-- 10 zones are sampled with one network call: Outer Sunset, Richmond, Presidio, Marina, Downtown, Mission, Bernal, Glen Park, Bayview, Twin Peaks.
-- Each chip shows weather emoji + rounded temperature °F + zone name. Click for wind, humidity, and last-updated time.
-- Chips are color-tinted by temperature: blue (<55°F), green (55-65°F), amber (65-75°F), red (75°F+).
-- Results are cached in `localStorage` (`sf-weather-cache-v1`) for instant reload, and auto-refresh every 15 minutes while the toggle is on.
+**On the map** — a small, color-tinted pill at each zone showing weather emoji + temperature (emoji-only on mobile to keep it tight). Hovering enlarges the chip; clicking opens a popup with wind, humidity, and last-updated time.
+
+**Side panel** (desktop) **/ bottom sheet** (mobile) — a `SF weather right now` card that lists all 10 zones sorted **coolest → warmest**, so the temperature spread across the city is immediately obvious. On mobile it's collapsed by default — just tap the header to slide it up. Tapping a zone row flies the map there and opens its popup.
+
+**The data**
+
+- Source: [Open-Meteo](https://open-meteo.com/) (free, no API key, no signup) — one multi-coordinate request to `api.open-meteo.com/v1/forecast` returns all 10 zones in a single network call.
+- Zones sampled: Outer Sunset, Richmond, Presidio, Marina, Downtown, Mission, Bernal, Glen Park, Bayview, Twin Peaks.
+- Color tints: blue (<55°F), green (55–65°F), amber (65–75°F), red (75°F+) — same scale on map chips and panel rows.
+- Cached in `localStorage` (`sf-weather-cache-v1`) for instant reload; auto-refreshes every 15 minutes while the toggle is on.
+- Closing the panel (the × button) turns the layer off entirely — same effect as un-checking the sidebar toggle.
 - Zones are defined in [`data/microclimates.json`](#microclimatesjson) — same shape as the other simple datasets, edit to add/move zones.
 
 ---

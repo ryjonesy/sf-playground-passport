@@ -103,6 +103,20 @@
 <main id="mapWrap">
   <div id="map"></div>
   <button id="toggleSidebar" aria-label="Toggle sidebar"><span id="toggleIcon">☰</span></button>
+
+  <!-- Microclimate weather panel: desktop = floating card, mobile = bottom sheet. -->
+  <aside id="weatherPanel" hidden aria-label="SF microclimate weather">
+    <header id="weatherSheetHandle" class="wxp-header">
+      <span class="wxp-grip" aria-hidden="true"></span>
+      <div class="wxp-title">
+        <strong>SF weather right now</strong>
+        <span id="weatherPanelUpdated" class="wxp-updated"></span>
+      </div>
+      <button id="weatherPanelClose" class="wxp-close" aria-label="Close weather panel" type="button">×</button>
+    </header>
+    <div id="weatherPanelList" class="wxp-list" role="list"></div>
+    <footer class="wxp-foot">Sorted coolest → warmest · <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a></footer>
+  </aside>
 </main>
 
 <dialog id="detail">

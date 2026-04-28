@@ -260,7 +260,6 @@ function renderWeatherChips() {
     const html = `
       <div class="wx-chip" data-temp="${tempBucket(w.temp)}" title="${escapeHtml(zone.name)} — ${info.t}, ${w.temp}°F, ${w.wind} mph wind, ${w.humidity}% humidity">
         <span class="wx-emoji">${info.e}</span><span class="wx-temp">${w.temp}°</span>
-        <span class="wx-name">${escapeHtml(zone.name)}</span>
       </div>`;
     const icon = L.divIcon({ className: 'wx-icon', html, iconSize: null, iconAnchor: [0, 0] });
     const marker = L.marker([zone.lat, zone.lng], { icon, interactive: true, keyboard: false });
@@ -308,6 +307,60 @@ async function refreshWeather(force = false) {
     }
   }
   renderWeatherChips();
+  renderWeatherPanel();
+}
+
+function renderWeatherPanel() {
+  const panel = document.getElementById('weatherPanel');
+  const list = document.getElementById('weatherPanelList');
+  const updated = document.getElementById('weatherPanelUpdated');
+  if (!panel || !list) return;
+  if (!weatherCache || !weatherCache.byId) {
+    list.innerHTML = '<div class="wxp-empty">Loading…</div>';
+    return;
+  }
+  // Sort zones from coolest to warmest — makes the temperature spread immediately visible.
+  const rows = microclimates
+    .map(z => ({ zone: z, w: weatherCache.byId[z.id] }))
+    .filter(r => r.w)
+    .sort((a, b) => a.w.temp - b.w.temp);
+
+  list.innerHTML = rows.map(({ zone, w }) => {
+    const info = wmoInfo(w.code);
+    return `
+      <button type="button" class="wxp-row" data-zone="${zone.id}" data-temp="${tempBucket(w.temp)}">
+        <span class="wxp-emoji">${info.e}</span>
+        <span class="wxp-name">${escapeHtml(zone.name)}</span>
+        <span class="wxp-cond">${info.t}</span>
+        <span class="wxp-temp">${w.temp}°</span>
+      </button>`;
+  }).join('');
+
+  if (updated) updated.textContent = `Updated ${formatRelativeTime(weatherCache.fetchedAt)}`;
+
+  // Wire row click → fly map to zone, open its popup.
+  list.querySelectorAll('.wxp-row').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const zoneId = btn.dataset.zone;
+      const zone = microclimates.find(z => z.id === zoneId);
+      if (!zone || !map) return;
+      map.flyTo([zone.lat, zone.lng], Math.max(map.getZoom(), 13), { duration: 0.6 });
+      // Briefly highlight the chip on the map
+      setTimeout(() => {
+        if (!weatherLayer) return;
+        weatherLayer.eachLayer(m => {
+          const ll = m.getLatLng();
+          if (Math.abs(ll.lat - zone.lat) < 1e-4 && Math.abs(ll.lng - zone.lng) < 1e-4) {
+            m.openPopup();
+          }
+        });
+      }, 650);
+      // On mobile, collapse the bottom sheet after tapping a row
+      if (window.matchMedia('(max-width: 720px)').matches) {
+        document.body.classList.remove('wx-sheet-open');
+      }
+    });
+  });
 }
 
 function startWeatherUpdates() {
@@ -484,20 +537,42 @@ function bindUI() {
     });
   });
 
-  // Weather (microclimate chips). Live data, default off.
+  // Weather (microclimate chips + panel). Live data, default off.
   const wxToggle = document.getElementById('fltWeather');
   const wxCount = document.getElementById('wxCount');
+  const wxPanel = document.getElementById('weatherPanel');
+  const wxPanelClose = document.getElementById('weatherPanelClose');
+  const wxSheetHandle = document.getElementById('weatherSheetHandle');
   if (wxCount) wxCount.textContent = microclimates.length ? `(${microclimates.length} zones)` : '';
   if (wxToggle) {
     wxToggle.addEventListener('change', async () => {
       if (wxToggle.checked) {
-        await refreshWeather();              // populates weatherCache + builds weatherLayer
+        document.body.classList.add('wx-on');
+        if (wxPanel) wxPanel.hidden = false;
+        await refreshWeather();              // populates weatherCache + builds weatherLayer + panel
         if (weatherLayer) map.addLayer(weatherLayer);
         startWeatherUpdates();
       } else {
+        document.body.classList.remove('wx-on', 'wx-sheet-open');
+        if (wxPanel) wxPanel.hidden = true;
         if (weatherLayer) map.removeLayer(weatherLayer);
         stopWeatherUpdates();
       }
+    });
+  }
+  // Panel "x" closes the panel and turns the layer off entirely (parity with the sidebar toggle).
+  if (wxPanelClose) {
+    wxPanelClose.addEventListener('click', () => {
+      if (wxToggle && wxToggle.checked) {
+        wxToggle.checked = false;
+        wxToggle.dispatchEvent(new Event('change'));
+      }
+    });
+  }
+  // Mobile bottom-sheet handle: tap anywhere on the header to expand/collapse.
+  if (wxSheetHandle) {
+    wxSheetHandle.addEventListener('click', () => {
+      document.body.classList.toggle('wx-sheet-open');
     });
   }
 
