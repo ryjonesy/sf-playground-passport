@@ -1925,5 +1925,17 @@
     "accessibility": [],
     "id": "pier-39-playground",
     "operator": "Pier 39 (private)"
+  },
+  {
+    "name": "Esmeralda Slide Park",
+    "facility": "Children's Play Area",
+    "address": "Esmeralda Ave & Winfield St",
+    "zipcode": "94110",
+    "lat": 37.7435283,
+    "lng": -122.418211,
+    "acres": null,
+    "accessibility": [],
+    "id": "esmeralda-slide-park",
+    "operator": "SF Rec & Park"
   }
 ]
