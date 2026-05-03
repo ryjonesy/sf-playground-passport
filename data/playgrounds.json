@@ -1715,7 +1715,7 @@
       "Accessible Restroom",
       "Wheelchair-accessible primary pathways"
     ],
-    "note": "Operated by the Presidio Trust (NPS) \u2014 the largest playground in SF, nature-inspired structures, ages 2-12, free, open 9:30am-6pm (Apr-Oct) / 9:30am-5pm (Nov-Mar)",
+    "note": "Operated by the Presidio Trust (NPS) — the largest playground in SF, nature-inspired structures, ages 2-12, free, open 9:30am-6pm (Apr-Oct) / 9:30am-5pm (Nov-Mar)",
     "operator": "Presidio Trust (NPS)"
   },
   {
@@ -1877,5 +1877,53 @@
     "accessibility": [],
     "id": "youngblood-coleman-playground",
     "operator": "SF Rec & Park"
+  },
+  {
+    "name": "Crane Cove Park",
+    "facility": "Children's Play Area",
+    "address": "18 Illinois St",
+    "zipcode": "94158",
+    "lat": 37.7632701,
+    "lng": -122.3873708,
+    "acres": null,
+    "accessibility": [],
+    "id": "crane-cove-park",
+    "operator": "Port of San Francisco"
+  },
+  {
+    "name": "Randolph and Bright Mini Park",
+    "facility": "Children's Play Area",
+    "address": "Randolph St & Bright St",
+    "zipcode": "94132",
+    "lat": 37.7145452,
+    "lng": -122.4637225,
+    "acres": null,
+    "accessibility": [],
+    "id": "randolph-and-bright-mini-park",
+    "operator": "SF Rec & Park"
+  },
+  {
+    "name": "South Beach Playground",
+    "facility": "Children's Play Area",
+    "address": "Embarcadero & Townsend St",
+    "zipcode": "94107",
+    "lat": 37.7804505,
+    "lng": -122.38801,
+    "acres": null,
+    "accessibility": [],
+    "id": "south-beach-playground",
+    "operator": "SF Rec & Park"
+  },
+  {
+    "name": "Pier 39 Playground",
+    "facility": "Children's Play Area",
+    "address": "Pier 39, The Embarcadero",
+    "zipcode": "94133",
+    "lat": 37.8084322,
+    "lng": -122.4088885,
+    "acres": null,
+    "accessibility": [],
+    "id": "pier-39-playground",
+    "operator": "Pier 39 (private)"
   }
 ]
