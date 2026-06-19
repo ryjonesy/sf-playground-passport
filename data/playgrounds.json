@@ -752,16 +752,17 @@
     "operator": "SF Rec & Park"
   },
   {
-    "name": "Ingleside Branch Library",
-    "facility": "Ingleside Library CPA",
-    "address": "1649 Ocean Avenue",
-    "zipcode": "94112",
-    "lat": 37.72423603,
-    "lng": -122.45610190000001,
-    "acres": 0.00749427525,
+    "name": "Elinor Friend Playground (SF Zoo)",
+    "facility": "Children's Play Area",
+    "address": "Sloat Blvd & Great Hwy",
+    "zipcode": "94132",
+    "lat": 37.73411,
+    "lng": -122.50294,
+    "acres": 0.83,
     "accessibility": [],
-    "id": "ingleside-branch-library",
-    "operator": "SF Rec & Park"
+    "id": "elinor-friend-playground-sf-zoo",
+    "operator": "San Francisco Zoo & Gardens",
+    "note": "Inside the SF Zoo — requires Zoo admission. Three biome zones for toddlers, preschoolers, and ages 5–12."
   },
   {
     "name": "J.P. Murphy Playground",
