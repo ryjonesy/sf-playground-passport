@@ -752,6 +752,31 @@
     "operator": "SF Rec & Park"
   },
   {
+    "name": "Hunters View Park",
+    "facility": "Children's Play Area",
+    "address": "111 Memory Lane",
+    "zipcode": "94124",
+    "lat": 37.7361934,
+    "lng": -122.3790843,
+    "acres": 0.72,
+    "accessibility": [],
+    "id": "hunters-view-park",
+    "operator": "Hunters View / John Stewart Company (POPOS)",
+    "note": "Privately owned public open space, opened May 2026. Three climbing structures, embankment slide, gantry-crane-inspired porch swings with SF Bay views."
+  },
+  {
+    "name": "Terrace Green Park",
+    "facility": "Children's Play Area",
+    "address": "100 Terrace Dr",
+    "zipcode": "94127",
+    "lat": 37.737262,
+    "lng": -122.465626,
+    "acres": 0.2,
+    "accessibility": [],
+    "id": "terrace-green-park",
+    "operator": "SF Rec & Park"
+  },
+  {
     "name": "Elinor Friend Playground (SF Zoo)",
     "facility": "Children's Play Area",
     "address": "Sloat Blvd & Great Hwy",
