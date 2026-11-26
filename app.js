@@ -94,9 +94,9 @@ function initMap() {
   map = L.map('map', { zoomControl: true, preferCanvas: true })
     .setView([37.7649, -122.4394], 12.5);
   L.control.zoom({ position: 'bottomright' }).remove(); // we kept the default top-right
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · © CARTO',
-    subdomains: 'abcd', maxZoom: 19,
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    maxZoom: 19,
   }).addTo(map);
 
   cluster = L.markerClusterGroup({
