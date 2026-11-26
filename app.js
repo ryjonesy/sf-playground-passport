@@ -81,9 +81,28 @@ function loadProgress() {
   try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'); }
   catch { return {}; }
 }
+let _snap = Object.fromEntries(Object.entries(progress).map(([id, p]) => [id, JSON.stringify({ ...p, ts: 0 })]));
 function saveProgress() {
+  // stamp entries that changed since last save so cloud sync can merge newest-wins
+  const now = Date.now();
+  for (const [id, p] of Object.entries(progress)) {
+    const sig = JSON.stringify({ ...p, ts: 0 });
+    if (_snap[id] !== sig) { p.ts = now; _snap[id] = sig; }
+  }
   localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
+  window.dispatchEvent(new Event('progress-saved'));
 }
+window.__pp = {
+  getState: () => ({ progress, trip }),
+  setState: (s) => {
+    progress = s.progress; trip = s.trip;
+    _snap = {};
+    for (const [id, p] of Object.entries(progress)) _snap[id] = JSON.stringify({ ...p, ts: 0 });
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
+    Object.keys(markersById).forEach(refreshMarker);
+    drawTripRoute(); updateTripInfo(); renderList(); updatePassport();
+  },
+};
 function getP(id) {
   if (!progress[id]) progress[id] = { visited: false, rating: 0, notes: '', date: '' };
   return progress[id];

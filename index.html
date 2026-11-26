@@ -41,6 +41,10 @@
         <button class="mini" id="importBtn" title="Restore progress from a backup file">⬆︎ Import</button>
         <input type="file" id="importFile" accept="application/json" hidden />
       </div>
+      <div class="actions-row">
+        <button class="mini" id="authBtn">Sign in with Google to sync</button>
+      </div>
+      <div id="syncStatus" style="font-size:12px;opacity:.7;margin-top:4px"></div>
     </div>
   </section>
 
@@ -163,5 +167,6 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <script src="./app.js" type="module"></script>
+<script src="./sync.js" type="module"></script>
 </body>
 </html>
