@@ -1963,5 +1963,85 @@
     "accessibility": [],
     "id": "esmeralda-slide-park",
     "operator": "SF Rec & Park"
+  },
+  {
+    "name": "Shipwreck Cove (Sunset Dunes)",
+    "facility": "Children's Play Area",
+    "address": "Upper Great Highway, between Judah & Kirkham St",
+    "zipcode": "94122",
+    "lat": 37.7612,
+    "lng": -122.5092,
+    "acres": null,
+    "accessibility": [
+      "Accessible play structures"
+    ],
+    "id": "shipwreck-cove-sunset-dunes",
+    "operator": "SF Rec & Park / Friends of Sunset Dunes",
+    "note": "Pirate-ship dune-education playground opened Sept 2026: multi-level ship, crow's nest with slide, sand play, xylophone cove. 10 ADA-accessible play structures. One-year pilot permit, so check it is still open."
+  },
+  {
+    "name": "Amatury Loop Playground",
+    "facility": "Children's Play Area",
+    "address": "Amatury Loop",
+    "zipcode": "94129",
+    "lat": 37.7959568,
+    "lng": -122.4687565,
+    "acres": null,
+    "accessibility": [],
+    "id": "amatury-loop-playground",
+    "operator": "Presidio Trust (NPS)",
+    "note": "Presidio neighborhood playground. Fenced; no pets."
+  },
+  {
+    "name": "West Washington Playground",
+    "facility": "Children's Play Area",
+    "address": "1430 Compton Rd",
+    "zipcode": "94129",
+    "lat": 37.7947286,
+    "lng": -122.4750054,
+    "acres": null,
+    "accessibility": [],
+    "id": "west-washington-playground",
+    "operator": "Presidio Trust (NPS)",
+    "note": "Presidio residential-neighborhood playground (also called Compton Playground). Fenced; no pets."
+  },
+  {
+    "name": "South Baker Beach Playground",
+    "facility": "Children's Play Area",
+    "address": "1706 Brooks St",
+    "zipcode": "94129",
+    "lat": 37.7897358,
+    "lng": -122.4802545,
+    "acres": null,
+    "accessibility": [],
+    "id": "south-baker-beach-playground",
+    "operator": "Presidio Trust (NPS)",
+    "note": "Presidio residential-neighborhood playground."
+  },
+  {
+    "name": "Baker Beach Apartments Playground",
+    "facility": "Children's Play Area",
+    "address": "1599 Stillwell Rd",
+    "zipcode": "94129",
+    "lat": 37.79319,
+    "lng": -122.48032,
+    "acres": null,
+    "accessibility": [],
+    "id": "baker-beach-apartments-playground",
+    "operator": "Presidio Trust (NPS)",
+    "note": "Presidio residential-neighborhood playground near Baker Beach."
+  },
+  {
+    "name": "North Fort Scott Playground",
+    "facility": "Children's Play Area",
+    "address": "1236 Ramsell Ct",
+    "zipcode": "94129",
+    "lat": 37.805736,
+    "lng": -122.4719879,
+    "acres": null,
+    "accessibility": [],
+    "id": "north-fort-scott-playground",
+    "operator": "Presidio Trust (NPS)",
+    "note": "Presidio residential-neighborhood playground."
   }
 ]
